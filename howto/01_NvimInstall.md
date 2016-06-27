@@ -1,8 +1,5 @@
 # Neovim installation on Ubuntu Linux
 ## Foreword
-Do you want to try [Neovim](https://neovim.io/) on [Ubuntu](http://www.ubuntu.com/desktop) or another OS from its family? Great!
-This is a guide to set it up quickly and have a ready-to-play installation with a bunch of awesome plugins.
-Here Neovim is supposed to be used in a terminal with [True Color](https://gist.github.com/XVilka/8346728) support: before starting with the guide, check to have one (i.e. gnome-terminal >= 3.12.3).
 Obviusly my configuration reflect my needs, so feel free to change it.
 
 install nvm
