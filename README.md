@@ -1,20 +1,21 @@
-[Link](howto/01_NvimInstall.md) to nvim install.
 # Neovim Notes
-Do you want to try [Neovim](https://neovim.io/) editor on? Great!
-Do you use [Ubuntu](http://www.ubuntu.com/desktop) or another OS from its family? Excellent!
-This is a guide to set it up quickly and have a ready-to-play installation with a bunch of awesome plugins.
+Do you want to try [Neovim](https://neovim.io/) editor? Great!
 
-Here Neovim is supposed to be used in a terminal with [True Color](https://gist.github.com/XVilka/8346728) support: before starting with the guide, check to have one (i.e. gnome-terminal >= 3.12.3).
+Do you use [Ubuntu](http://www.ubuntu.com/desktop) or another OS from its family? Excellent!!!
 
-Have fun!
+This is a guide to set it up quickly with a bunch of awesome plugins.
+
+Neovim is here supposed to be used in a terminal with [True Color](https://gist.github.com/XVilka/8346728) support: before start, check to have one (i.e. gnome-terminal >= 3.12.3).
+
+Enjoy!
 
 ## Index
-1. How Tos
-..* [Installation on Ubuntu](./howto/01_NvimInstall.md)
-..* [Plugin installation](./howto/03_NvimPlugins.md)
-2. [Tip and tricks]()
-..* [General tips]()
-..* [Plugin tips]()
-3. [Configuration files](./conf)
+* [How Tos](./howto)
+    1. [Installation on Ubuntu](./howto/01_NvimInstall.md)
+    2. [Plugin installation](./howto/03_NvimPlugins.md)
+* [Tip and tricks](./tips)
+    1. [General tips](./tips/01_NvimGeneralTips.md)
+    2. [Plugin tips](./tips/02_NvimPluginTips.md)
+* [Configuration files](./conf)
 
-
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)

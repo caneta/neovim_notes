@@ -4,20 +4,9 @@
     curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     ```
-* Add the following to **init.vim**
+## Plugins
+* Install [Neovim python-client](https://github.com/neovim/python-client) (needed by some plugin):
     ```
-    call plug#begin('~/.config/nvim/plugins')
-    Plug 'vim-airline/vim-airline'
-    Plug 'tpope/vim-commentary'
-    Plug 'tpope/vim-repeat'
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-unimpaired'
-    Plug 'tpope/vim-fugitive'
-    Plug 'neomake/neomake'
-    call plug#end()
-    ```
-* Run command `:PlugInstall`
-* Add the following to **init.vim**
-    ```
-    autocmd! BufWritePost,BufEnter * Neomake " To run neomake automatically at file save
+    sudo apt-get install python-dev python-pip python3-dev python3-pip
+    pip3 install neovim
     ```
