@@ -1,4 +1,4 @@
-## Neovim basic installation on Ubuntu Linux
+# Neovim basic installation on Ubuntu Linux
 * Neovim installation steps (partly taken from [here](https://github.com/neovim/neovim/wiki/Installing-Neovim)):
 
     ```
@@ -9,4 +9,4 @@
     ```
 * Open your terminal and run Neovim typing `nvim`
 
-Continue with [configuring Neovim](./02_NvimBasicConf.md)
+Continue with [configuring Neovim](./02_NvimBasicConf.md).
