@@ -1,4 +1,4 @@
-" Hook needed for deoplete installation
+" Hook needed for detoplete installation
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
@@ -18,7 +18,7 @@ Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
 Plug 'chrisbra/Colorizer'       " Color the background of a CSS colorname (Hex, RGBA, etc)
 
 " Syntax specific
-Plug 'andreshazard/vim-freemarker' " Freemarker templating language
+Plug 'andreshazard/vim-freemarker'
 
 " Utilities
 Plug 'tpope/vim-commentary'
@@ -28,13 +28,15 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-vinegar'    " Defines some netrw behaviours and mappings
 Plug 'godlygeek/tabular'    " Text filtering and alignment
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line Fuzzy Finder
+Plug 'junegunn/fzf.vim'     " FZF Neovim Wrapper
 
 " Autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'Raimondi/delimitMate'
 Plug 'mattn/emmet-vim'
 
-" Linting
+" Linting stuff
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'neomake/neomake'
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }

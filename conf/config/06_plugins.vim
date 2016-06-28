@@ -1,4 +1,3 @@
-" Neomake ===================================================
 autocmd! BufWritePost,BufEnter * Neomake " To run neomake automatically at file save
 
 " how to display messages
@@ -6,6 +5,14 @@ let g:neomake_warning_sign = { 'text': '⚠️' }
 let g:neomake_error_sign = { 'text': '❌' }
 let g:neomake_style_warning_sign = { 'text': '💩' }
 let g:neomake_style_error_sign = { 'text': '⁉️' }
+
+" let g:neomake_java_javac_maker = {
+" \ 'args': ['cp', '~/liferay/progetti/inpeco/landingPages/bundles/tomcat-8.0.32/lib/ext'],
+" \ }
+
+let g:neomake_java_javac_maker = {
+\ 'args': ['cp', '~/Scrivania/liferay-ce-portal-src-7.0-ga2'],
+\ }
 
 
 " vim-airline
@@ -31,3 +38,7 @@ autocmd CompleteDone * pclose! " Automatically close scratch window after select
 let g:tern_request_timeout=1
 " let g:tern_show_signature_in_pum=0  " This do disable full signature type on autocomplete
 
+" vim-commentary
+autocmd FileType sql set commentstring=--\ %s
+autocmd FileType jsp set commentstring=<%--\ %s\ --%>
+autocmd FileType freemarker set commentstring=<#--\ %s\ -->
