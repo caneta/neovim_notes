@@ -2,7 +2,7 @@
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>| " Set ctr-l to clean up last search match highlight
 nnoremap K i<CR><Esc>|                             " The opposite of J: split single line in two at cursor position
 
-" Mapping using leader (default is '\')
+" Mapping using key leader (default is '\')
 vnoremap <leader>c "+yh|        " Visual mode: copy in the system clipboard with \c
 nnoremap <leader>v "+p|         " Normal mode: paste from the system clipboard with \v
 inoremap <leader>v <C-r><C-p>+| " Insert mode: paste from the system clipboard with \v

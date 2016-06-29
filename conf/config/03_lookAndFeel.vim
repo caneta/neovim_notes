@@ -1,4 +1,4 @@
-colorscheme OceanicNext
+colorscheme OceanicNext             " Colorscheme used at startup
 set termguicolors                   " Use 24 bit colors
 set background=dark                 " Set colorscheme dark variant
 set list                            " Display unprintable characters
