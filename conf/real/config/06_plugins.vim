@@ -14,7 +14,6 @@ let g:neomake_java_javac_maker = {
 \ 'args': ['cp', '~/Scrivania/liferay-ce-portal-src-7.0-ga2'],
 \ }
 
-
 " vim-airline
 let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts=1 " Use powerline fonts, installed with nerd fonts
@@ -42,3 +41,6 @@ let g:tern_request_timeout=1
 autocmd FileType sql set commentstring=--\ %s
 autocmd FileType jsp set commentstring=<%--\ %s\ --%>
 autocmd FileType freemarker set commentstring=<#--\ %s\ -->
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
