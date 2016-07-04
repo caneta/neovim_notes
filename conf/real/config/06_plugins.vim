@@ -44,3 +44,24 @@ autocmd FileType freemarker set commentstring=<#--\ %s\ -->
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
+
+" vim-startify: where to store/load sessions to/from
+let g:startify_session_dir = '~/.config/nvim/session'
+
+" vim-startify: number of file listed
+let g:startify_files_number = 5
+
+" vim-startify look
+let g:startify_list_order = [
+  \'sessions',
+  \'bookmarks',
+  \'dir',
+  \'files',
+  \'commands'
+\]
+
+" vim-startify bookmarks
+let g:startify_bookmarks = [
+  \{'c': '~/.config/nvim/init.vim'},
+  \{'l': '~/liferay/'}
+\]

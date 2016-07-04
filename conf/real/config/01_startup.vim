@@ -31,6 +31,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line
 Plug 'junegunn/fzf.vim'     " FZF Neovim Wrapper
 Plug 'majutsushi/tagbar'    " Class outline viewer: ctags dependency needed
 
+
 " Autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }      " Asynchronous keyword completion
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " JavaScript source for deoplete 
