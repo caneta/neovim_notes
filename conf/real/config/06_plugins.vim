@@ -63,5 +63,8 @@ let g:startify_list_order = [
 " vim-startify bookmarks
 let g:startify_bookmarks = [
   \{'c': '~/.config/nvim/init.vim'},
-  \{'l': '~/liferay/'}
+  \{'l': '~/.config/nvim/config/08_liferay.vim'}
 \]
+
+" indentLine
+let g:indentLine_conceallevel=0 " Show text normally, do not hide any characters like double quotes in Json files

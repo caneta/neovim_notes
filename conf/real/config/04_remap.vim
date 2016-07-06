@@ -9,4 +9,4 @@ inoremap <leader>v <C-r><C-p>+| " Insert mode: paste from the system clipboard w
 map <leader>e :Explore<CR>|     " Open netrw Esplore window
 map <leader>w :wa<CR>|          " Save every buffer
 map <leader>q :wqa<CR>|         " Save every buffer and exit
-map <leader>f :Files <CR>| " Search files in the current dir with fzf.vim plugin
+map <leader>n :enew<CR>|        " Open a new buffer in a new window
