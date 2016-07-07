@@ -44,5 +44,6 @@ Plug 'neomake/neomake'              " Asynchronous make inspired by Syntactic pl
 
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based
+Plug 'elzr/vim-json'               " Better Json syntax
 
 call plug#end()

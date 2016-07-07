@@ -62,9 +62,11 @@ let g:startify_list_order = [
 
 " vim-startify bookmarks
 let g:startify_bookmarks = [
-  \{'c': '~/.config/nvim/init.vim'},
-  \{'l': '~/.config/nvim/config/08_liferay.vim'}
+  \{'c': '~/.config/nvim/init.vim'}
 \]
 
 " indentLine
-let g:indentLine_conceallevel=0 " Show text normally, do not hide any characters like double quotes in Json files
+let g:indentLine_char="┊" " Custom character for vertical lines highlighting indentation
+
+" vim-json
+let g:vim_json_syntax_conceal=0 " Remove double quote hide
