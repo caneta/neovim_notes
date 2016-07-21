@@ -3,10 +3,13 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>| " Set ctr-l to clean up last 
 nnoremap K i<CR><Esc>|                             " The opposite of J: split single line in two at cursor position
 
 " Mapping using key leader (default is '\')
-vnoremap <leader>c "+yh|        " Visual mode: copy in the system clipboard with \c
-nnoremap <leader>v "+p|         " Normal mode: paste from the system clipboard with \v
-inoremap <leader>v <C-r><C-p>+| " Insert mode: paste from the system clipboard with \v
-map <leader>e :Explore<CR>|     " Open netrw Esplore window
-map <leader>w :wa<CR>|          " Save every buffer
-map <leader>q :wqa<CR>|         " Save every buffer and exit
-map <leader>n :enew<CR>|        " Open a new buffer in a new window
+vnoremap <leader>c "+yh|         " Visual mode: copy in the system clipboard with \c
+nnoremap <leader>v "+p|          " Normal mode: paste from the system clipboard with \v
+inoremap <leader>v <C-r><C-p>+|  " Insert mode: paste from the system clipboard with \v
+map <leader>e :Explore<CR>|      " Open netrw Esplore window
+map <leader>w :wa<CR>|           " Save every buffer
+inoremap <leader>w <Esc>:wa<CR>| " Save every buffer (insert mode)
+map <leader>q :wqa<CR>|          " Save every buffer and exit
+map <leader>n :enew<CR>|         " Open a new buffer in a new window
+map <leader>b :bd<CR>|           " Close the current buffer
+map <leader>o :on<CR>|           " Close every buffer, but the current one
