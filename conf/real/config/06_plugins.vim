@@ -70,3 +70,6 @@ let g:indentLine_char="┊" " Custom character for vertical lines highlighting i
 
 " vim-json
 let g:vim_json_syntax_conceal=0 " Remove double quote hide
+
+" Emoji
+set completefunc=emoji#complete

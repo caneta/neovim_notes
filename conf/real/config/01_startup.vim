@@ -16,15 +16,19 @@ Plug 'ryanoasis/vim-devicons'   " File type icons to many plugins such as NERDTr
 Plug 'vim-airline/vim-airline'  " Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
 Plug 'chrisbra/Colorizer'       " Color the background of a CSS colorname (Hex, RGBA, etc)
+Plug 'junegunn/vim-emoji'       " Enables emoji in Vim
+Plug 'wellle/targets.vim'        " Additional text objects
 
 " Utilities
-Plug 'tpope/vim-commentary' " Comment/uncomment code easily
-Plug 'tpope/vim-repeat'     " Extend the . command to make it work with plugins
-Plug 'tpope/vim-surround'   " Surround text with parenthesis, quotes, etc.
-Plug 'tpope/vim-unimpaired' " Remaps to move between buffers, quickfix items and more
-Plug 'tpope/vim-fugitive'   " A git wrapper
-Plug 'tpope/vim-vinegar'    " Defines some netrw behaviours and mappings
-Plug 'godlygeek/tabular'    " Text filtering and alignment
+Plug 'tpope/vim-commentary'      " Comment/uncomment code easily
+Plug 'tpope/vim-repeat'          " Extend the . command to make it work with plugins
+Plug 'tpope/vim-surround'        " Surround text with parenthesis, quotes, etc.
+Plug 'tpope/vim-unimpaired'      " Remaps to move between buffers, quickfix items and more
+Plug 'tpope/vim-fugitive'        " A git wrapper
+Plug 'tpope/vim-vinegar'         " Defines some netrw behaviours and mappings
+Plug 'godlygeek/tabular'         " Text filtering and alignment
+Plug 'easymotion/vim-easymotion' " Better vim motions
+
 
 " Source files navigation
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line Fuzzy Finder
@@ -45,5 +49,6 @@ Plug 'neomake/neomake'              " Asynchronous make inspired by Syntactic pl
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based
 Plug 'elzr/vim-json'               " Better Json syntax
+Plug 'othree/html5.vim'               " Better HTML5 syntax and omnicompletion
 
 call plug#end()

@@ -21,6 +21,5 @@ set clipboard+=unnamedplus " to put yanked lines into clipboard
 set hidden                 " Switching to another buffer, it hides already opened and modified buffers instead of closing them
 set nobackup               " Do not produce backup files with ~ postfix
 
-
 " Disable continuation of comments to the next line
 autocmd FileType * set formatoptions-=c formatoptions-=r formatoptions-=o
