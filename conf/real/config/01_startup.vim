@@ -28,6 +28,7 @@ Plug 'tpope/vim-fugitive'        " A git wrapper
 Plug 'tpope/vim-vinegar'         " Defines some netrw behaviours and mappings
 Plug 'godlygeek/tabular'         " Text filtering and alignment
 Plug 'easymotion/vim-easymotion' " Better vim motions
+Plug 'henrik/vim-indexed-search' " When perform a search, it prints automatically 'At match #N out of M matches'
 
 
 " Source files navigation
