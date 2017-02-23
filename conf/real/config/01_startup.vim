@@ -17,7 +17,8 @@ Plug 'vim-airline/vim-airline'  " Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
 Plug 'chrisbra/Colorizer'       " Color the background of a CSS colorname (Hex, RGBA, etc)
 Plug 'junegunn/vim-emoji'       " Enables emoji in Vim
-Plug 'wellle/targets.vim'        " Additional text objects
+Plug 'wellle/targets.vim'       " Additional text objects
+Plug 'blueyed/vim-diminactive'  " Dim inactive windows
 
 " Utilities
 Plug 'tpope/vim-commentary'      " Comment/uncomment code easily
@@ -50,6 +51,7 @@ Plug 'neomake/neomake'              " Asynchronous make inspired by Syntactic pl
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based
 Plug 'elzr/vim-json'               " Better Json syntax
-Plug 'othree/html5.vim'               " Better HTML5 syntax and omnicompletion
+Plug 'othree/html5.vim'            " Better HTML5 syntax and omnicompletion
+Plug 'digitaltoad/vim-pug'         " Pug templating language
 
 call plug#end()
