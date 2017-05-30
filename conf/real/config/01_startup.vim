@@ -1,4 +1,4 @@
-" Hook needed for detoplete installation
+" Hook needed for deoplete installation
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
@@ -8,17 +8,18 @@ endfunction
 call plug#begin('~/.config/nvim/plugins')
 
 " Look and feel
-Plug 'mhinz/vim-startify'       " Fancy start screen
+" Plug 'mhinz/vim-startify'       " Fancy start screen
 Plug 'morhetz/gruvbox'          " Retro groove color scheme
 Plug 'tomasr/molokai'           " Monokai inspired color scheme
 Plug 'mhartington/oceanic-next' " Sublime Text inspired color scheme
 Plug 'ryanoasis/vim-devicons'   " File type icons to many plugins such as NERDTree, vim-airline, etc
 Plug 'vim-airline/vim-airline'  " Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
-Plug 'chrisbra/Colorizer'       " Color the background of a CSS colorname (Hex, RGBA, etc)
+Plug 'shmargum/vim-sass-colors' " Color the background of a CSS colorname (Hex, RGBA, etc)
 Plug 'junegunn/vim-emoji'       " Enables emoji in Vim
 Plug 'wellle/targets.vim'       " Additional text objects
 Plug 'blueyed/vim-diminactive'  " Dim inactive windows
+Plug 'matze/vim-move'           " Move lines avoiding cut and paste
 
 " Utilities
 Plug 'tpope/vim-commentary'      " Comment/uncomment code easily
@@ -53,5 +54,6 @@ Plug 'andreshazard/vim-freemarker' " Apache templating language, java based
 Plug 'elzr/vim-json'               " Better Json syntax
 Plug 'othree/html5.vim'            " Better HTML5 syntax and omnicompletion
 Plug 'digitaltoad/vim-pug'         " Pug templating language
+Plug 'elixir-lang/vim-elixir'      " Elixir language support
 
 call plug#end()
