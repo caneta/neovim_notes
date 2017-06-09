@@ -1,7 +1,12 @@
-autocmd FileType markdown setlocal softtabstop=4 shiftwidth=4
+" [ Markdown -------------------------------------------------------------------
+
 " Disable IndentLine plugin for Markdown files because it sets conceallevel=2
 autocmd FileType markdown let g:indentLine_enabled=0
+" ---------------------------------------------------------------------------- ]
 
+" [ Git ------------------------------------------------------------------------
+
+" https://vi.stackexchange.com/questions/11892/populate-a-git-commit-template-with-variables
 " In Git commit messages, let’s make it 72 characters
 autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit set colorcolumn=73
@@ -23,3 +28,4 @@ function! s:expand_commit_template() abort
 endfunction
 
 autocmd BufRead */.git/COMMIT_EDITMSG call s:expand_commit_template()
+" ---------------------------------------------------------------------------- ]

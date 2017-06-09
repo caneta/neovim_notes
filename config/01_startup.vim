@@ -1,22 +1,18 @@
-" Hook needed for deoplete installation
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
+" Using vim-plug as plugin manager:
+"   * [DEPS]: plugin dependent on third party packages (see plugin docs)
+"   * [CONF]: plugin behaviour customized with configuration commands
 
-" ==============================================================
-" Using vim-plug as plugin manager
 call plug#begin('~/.config/nvim/plugins')
 
 " Look and feel
-" Plug 'mhinz/vim-startify'       " Fancy start screen
+Plug 'mhinz/vim-startify'       " [CONF] Fancy start screen
 Plug 'morhetz/gruvbox'          " Retro groove color scheme
 Plug 'tomasr/molokai'           " Monokai inspired color scheme
 Plug 'mhartington/oceanic-next' " Sublime Text inspired color scheme
-Plug 'ryanoasis/vim-devicons'   " File type icons to many plugins such as NERDTree, vim-airline, etc
-Plug 'vim-airline/vim-airline'  " Light status bar and tabline
+Plug 'ryanoasis/vim-devicons'   " [DEPS] File type icons to many plugins such as NERDTree, vim-airline, etc
+Plug 'vim-airline/vim-airline'  " [CONF] Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
 Plug 'shmargum/vim-sass-colors' " Color the background of a CSS colorname (Hex, RGBA, etc)
-Plug 'junegunn/vim-emoji'       " Enables emoji in Vim
 Plug 'wellle/targets.vim'       " Additional text objects
 Plug 'blueyed/vim-diminactive'  " Dim inactive windows
 Plug 'matze/vim-move'           " Move lines avoiding cut and paste
@@ -32,22 +28,25 @@ Plug 'godlygeek/tabular'         " Text filtering and alignment
 Plug 'easymotion/vim-easymotion' " Better vim motions
 Plug 'henrik/vim-indexed-search' " When perform a search, it prints automatically 'At match #N out of M matches'
 
-
 " Source files navigation
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line Fuzzy Finder
 Plug 'junegunn/fzf.vim'     " FZF Neovim Wrapper
-Plug 'majutsushi/tagbar'    " Class outline viewer: ctags dependency needed
-
+Plug 'majutsushi/tagbar'    " [DEPS] Class outline viewer: ctags dependency needed
 
 " Autocompletion
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }      " Asynchronous keyword completion
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " JavaScript source for deoplete 
+Plug 'ervandew/supertab' " Use Tab for insert mode auto completion
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }    " [DEPS] Asynchronous keyword completion (depends on Python 3 neovim package)
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] } " [DEPS] JavaScript source for deoplete (depends on Node.js)
+Plug 'SirVer/ultisnips' " Autocompletion with snippets
+Plug 'honza/vim-snippets' " List of a lot of snippets
+Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] } " [DEPS] Tern-based JavaScript editing support
+Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] } " Completion for function parameters
 Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typing
 Plug 'mattn/emmet-vim'      " Expand abbreviations for Web Development with emmet syntax
 
 " Linting
-Plug 'ludovicchabant/vim-gutentags' " (Re)Generate tag files while you are working
-Plug 'neomake/neomake'              " Asynchronous make inspired by Syntactic plugin
+Plug 'ludovicchabant/vim-gutentags' " [DEPS] (Re)Generate tag files while you are working
+Plug 'neomake/neomake'              " [DEPS] Asynchronous make inspired by Syntactic plugin
 
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based

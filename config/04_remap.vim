@@ -16,7 +16,7 @@ map <leader>o :on<CR>|           " Close every buffer, but the current one
 
 " Remaps for accented vowels
 inoremap ''a <C-k>a!
-inoremap ,e <C-k>e'| " acute accent (i.e.: 'perché', 'sé')
+inoremap ,e <C-k>e'|  " acute accent (i.e.: 'perché', 'sé')
 inoremap ''e <C-k>e!| " grave accent (i.e.: 'cioè', 'è')
 inoremap ''E <C-k>E!| " grave accent (i.e.: 'cioè', 'è')
 inoremap ''i <C-k>i!
