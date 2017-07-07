@@ -14,6 +14,7 @@ map <leader>q :wqa<CR>|          " Save every buffer and exit
 map <leader>n :enew<CR>|         " Open a new buffer in a new window
 map <leader>b :bd<CR>|           " Close the current buffer
 map <leader>o :on<CR>|           " Close every buffer, but the current one
+vnoremap <leader>s :sort<CR>|    " Visual mode: sort selection alphabetically
 
 " Remaps for accented vowels
 inoremap ''a <C-k>a!
