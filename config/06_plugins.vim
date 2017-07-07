@@ -84,24 +84,24 @@ let g:indentLine_char="┊" " Custom character for vertical lines highlighting i
 let g:vim_json_syntax_conceal=0 " Remove double quote hide
 " ---------------------------------------------------------------------------- ]
 
-" [ neomake --------------------------------------------------------------------
-autocmd! BufWritePost,BufEnter * Neomake " To run neomake automatically at file save
+" " [ neomake --------------------------------------------------------------------
+" autocmd! BufWritePost,BufEnter * Neomake " To run neomake automatically at file save
 
-" how to display messages
-let g:neomake_warning_sign = { 'text': '⚠️' }
-let g:neomake_error_sign = { 'text': '❌' }
-let g:neomake_style_warning_sign = { 'text': '💩' }
-let g:neomake_style_error_sign = { 'text': '⁉️' }
+" " how to display messages
+" let g:neomake_warning_sign = { 'text': '⚠️' }
+" let g:neomake_error_sign = { 'text': '❌' }
+" let g:neomake_style_warning_sign = { 'text': '💩' }
+" let g:neomake_style_error_sign = { 'text': '⁉️' }
 
 " let g:neomake_java_javac_maker = {
 " \ 'args': ['cp', '~/liferay/progetti/customer/project/bundles/tomcat-8.0.32/lib/ext'],
 " \ }
 
-let g:neomake_java_javac_maker = {
-\ 'args': ['cp', '~/Scrivania/liferay-ce-portal-src-7.0-ga2'],
-\ }
+" let g:neomake_java_javac_maker = {
+" \ 'args': ['cp', '~/Scrivania/liferay-ce-portal-src-7.0-ga2'],
+" \ }
 
-let g:neomake_javascript_enabled_makers = ['eslint']
+" let g:neomake_javascript_enabled_makers = ['eslint']
 
 " let g:neomake_scss_scsslint_maker = {
 " \ 'args': ['--config', '~/liferay/progetti/customer/project/themes/my-theme/src/css/.scss-lint.yml'],

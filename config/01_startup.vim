@@ -12,7 +12,7 @@ Plug 'mhartington/oceanic-next' " Sublime Text inspired color scheme
 Plug 'ryanoasis/vim-devicons'   " [DEPS] File type icons to many plugins such as NERDTree, vim-airline, etc
 Plug 'vim-airline/vim-airline'  " [CONF] Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
-Plug 'shmargum/vim-sass-colors' " Color the background of a CSS colorname (Hex, RGBA, etc)
+" Plug 'shmargum/vim-sass-colors' " Color the background of a CSS colorname (Hex, RGBA, etc)
 Plug 'wellle/targets.vim'       " Additional text objects
 Plug 'blueyed/vim-diminactive'  " Dim inactive windows
 Plug 'matze/vim-move'           " Move lines avoiding cut and paste
@@ -37,6 +37,8 @@ Plug 'majutsushi/tagbar'    " [DEPS] Class outline viewer: ctags dependency need
 Plug 'ervandew/supertab' " Use Tab for insert mode auto completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }    " [DEPS] Asynchronous keyword completion (depends on Python 3 neovim package)
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] } " [DEPS] JavaScript source for deoplete (depends on Node.js)
+Plug 'steelsojka/deoplete-flow', { 'do': 'npm install -g flow-bin' }
+
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
 Plug 'honza/vim-snippets' " List of a lot of snippets
 Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] } " [DEPS] Tern-based JavaScript editing support
@@ -46,7 +48,9 @@ Plug 'mattn/emmet-vim'      " Expand abbreviations for Web Development with emme
 
 " Linting
 Plug 'ludovicchabant/vim-gutentags' " [DEPS] (Re)Generate tag files while you are working
-Plug 'neomake/neomake'              " [DEPS] Asynchronous make inspired by Syntactic plugin
+Plug 'w0rp/ale'                     " Asynchronous linter for a lot of languages
+" Plug 'neomake/neomake'              " [DEPS] Asynchronous make inspired by Syntactic plugin
+" Plug 'dojoteef/neomake-autolint'    " Permits a 'lint-as-you-type' feature with Neomake
 
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based
