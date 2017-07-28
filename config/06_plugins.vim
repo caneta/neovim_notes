@@ -84,6 +84,10 @@ let g:indentLine_char="┊" " Custom character for vertical lines highlighting i
 let g:vim_json_syntax_conceal=0 " Remove double quote hide
 " ---------------------------------------------------------------------------- ]
 
+" [ vim-jsx -------------------------------------------------------------------
+let g:jsx_ext_required = 0
+" ---------------------------------------------------------------------------- ]
+
 " " [ neomake --------------------------------------------------------------------
 " autocmd! BufWritePost,BufEnter * Neomake " To run neomake automatically at file save
 

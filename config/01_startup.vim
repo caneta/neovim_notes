@@ -58,5 +58,6 @@ Plug 'elzr/vim-json'               " Better Json syntax
 Plug 'othree/html5.vim'            " Better HTML5 syntax and omnicompletion
 Plug 'digitaltoad/vim-pug'         " Pug templating language
 Plug 'elixir-lang/vim-elixir'      " Elixir language support
+Plug 'mxw/vim-jsx'                 " React JSX templating language support
 
 call plug#end()
