@@ -1,5 +1,6 @@
 " [ fzf.vim --------------------------------------------------------------------
 map <leader>f :Files <CR>| " Search files in the current dir with fzf.vim plugin
+map <leader>g :Ag <CR>| " Search strings ag with through fzf.vim plugin
 " ---------------------------------------------------------------------------- ]
 
 " [ neomake --------------------------------------------------------------------
