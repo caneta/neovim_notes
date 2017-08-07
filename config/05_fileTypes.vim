@@ -12,10 +12,14 @@ autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit set colorcolumn=73
 
 " Git commit template with variables
+" A branch is built following the pattern <type>/<jira-id>[-<roadmap-id>][-<spec>]
+" where <type> can be one of [feature|release|bugfix|hotfix] and <spec> is a
+" little description of the branch
+" A branch name example could be 'feature/INCPOWCSLR-85-INPCDP-114-engineered-by-company'
 function! s:expand_commit_template() abort
   let context = {
         \ 'CURRENT_BRANCH': matchstr(system('git rev-parse --abbrev-ref HEAD'), '\p\+'),
-        \ 'JIRA_ISSUE': matchstr(system('git rev-parse --abbrev-ref HEAD | cut -d "-" -f 2,3'), '\p\+'),
+        \ 'JIRA_ISSUE': matchstr(system('git rev-parse --abbrev-ref HEAD | cut -d "-" -f 1,2 | cut -d "/" -f 2'), '\p\+'),
         \ 'AUTHOR': 'Alessandro Candini',
         \ }
 
