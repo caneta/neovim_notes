@@ -29,6 +29,7 @@ let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts=1 " Use powerline fonts, installed with nerd fonts
 let g:airline#extensions#tabline#enabled=1 " Set enhanced tabline
 let g:airline#extensions#tabline#fnamemod=':t' " Filename format: tail of the filename
+let g:airline#extensions#tabline#buffer_idx_mode = 1 " Show tab numbers
 " ---------------------------------------------------------------------------- ]
 
 " [ delimitMate ----------------------------------------------------------------
@@ -85,17 +86,27 @@ let g:vim_json_syntax_conceal=0 " Remove double quote hide
 " ---------------------------------------------------------------------------- ]
 
 " [ vim-jsx -------------------------------------------------------------------
-let g:jsx_ext_required = 0
+" let g:jsx_ext_required = 0
 " ---------------------------------------------------------------------------- ]
 
 " " [ neomake --------------------------------------------------------------------
 " autocmd! BufWritePost,BufEnter * Neomake " To run neomake automatically at file save
 
-" " how to display messages
-" let g:neomake_warning_sign = { 'text': '⚠️' }
-" let g:neomake_error_sign = { 'text': '❌' }
-" let g:neomake_style_warning_sign = { 'text': '💩' }
-" let g:neomake_style_error_sign = { 'text': '⁉️' }
+let g:neomake_javascript_enabled_makers = ['eslint']
+call neomake#configure#automake('nirw')
+" call neomake#configure#automake({
+"   \ 'TextChanged': {},
+"   \ 'InsertLeave': {},
+"   \ 'BufWritePost': {'delay': 0},
+"   \ 'BufWinEnter': {},
+"   \ }, 500)
+" let g:neomake_open_list = 1
+
+" how to display messages
+let g:neomake_warning_sign = { 'text': '⚠️' }
+let g:neomake_error_sign = { 'text': '❌' }
+let g:neomake_style_warning_sign = { 'text': '💩' }
+let g:neomake_style_error_sign = { 'text': '⁉️' }
 
 " let g:neomake_java_javac_maker = {
 " \ 'args': ['cp', '~/liferay/progetti/customer/project/bundles/tomcat-8.0.32/lib/ext'],
@@ -105,7 +116,6 @@ let g:jsx_ext_required = 0
 " \ 'args': ['cp', '~/Scrivania/liferay-ce-portal-src-7.0-ga2'],
 " \ }
 
-" let g:neomake_javascript_enabled_makers = ['eslint']
 
 " let g:neomake_scss_scsslint_maker = {
 " \ 'args': ['--config', '~/liferay/progetti/customer/project/themes/my-theme/src/css/.scss-lint.yml'],
