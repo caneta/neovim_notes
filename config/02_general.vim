@@ -1,6 +1,7 @@
 " Indentation
 set autoindent    " Copy indent from current line when starting a new line
 set smartindent   " Do smart autoindenting when starting a new line
+set ignorecase    " Our search will be case insensitive by default: without this, set smartcase does not work!
 set smartcase     " Our search will be case sensitive if it contains an uppercase letter
 set expandtab     " When pressing <Tab> use spaces instead
 set softtabstop=2 " How many spaces instead of a <Tab>
