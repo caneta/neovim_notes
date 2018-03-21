@@ -4,6 +4,12 @@
 autocmd FileType markdown let g:indentLine_enabled=0
 " ---------------------------------------------------------------------------- ]
 
+
+" [ JSPF -----------------------------------------------------------------------
+
+autocmd BufNewFile,BufRead *.jspf set syntax=jsp " Force jsp syntax for jsp fragment files
+" ---------------------------------------------------------------------------- ]
+
 " [ Git ------------------------------------------------------------------------
 
 " https://vi.stackexchange.com/questions/11892/populate-a-git-commit-template-with-variables
