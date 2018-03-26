@@ -12,7 +12,7 @@ map <leader>w :wa<CR>|           " Save every buffer
 inoremap <leader>w <Esc>:wa<CR>| " Save every buffer (insert mode)
 map <leader>q :wqa<CR>|          " Save every buffer and exit
 map <leader>n :enew<CR>|         " Open a new buffer in a new window
-" map <leader>b :bd<CR>|           " Close the current buffer
+map <leader>b :bd<CR>|           " Close the current buffer
 map <leader>o :on<CR>|           " Close every buffer, but the current one
 vnoremap <leader>s :sort<CR>|    " Visual mode: sort selection alphabetically
 
