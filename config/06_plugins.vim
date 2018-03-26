@@ -121,3 +121,7 @@ let g:neomake_style_error_sign = { 'text': '⁉️' }
 " \ 'args': ['--config', '~/liferay/progetti/customer/project/themes/my-theme/src/css/.scss-lint.yml'],
 " \ }
 " ---------------------------------------------------------------------------- ]
+
+" [ vim-gutentags -------------------------------------------------------------------
+let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
+" ---------------------------------------------------------------------------- ]

@@ -1,6 +1,11 @@
 " [ fzf.vim --------------------------------------------------------------------
-map <leader>f :Files <CR>| " Search files in the current dir with fzf.vim plugin
-map <leader>g :Ag <CR>| " Search strings ag with through fzf.vim plugin
+nmap <leader>f :GFiles <CR>| " Search git versioned files in the current dir
+nmap <leader>F :Files <CR>| " Search files in the current dir
+nmap <leader>g :Ag <CR>| " Search strings ag
+nmap <Leader>b :Buffers<CR>| " Search in open buffers
+nmap <Leader>h :History<CR>| " Search in buffer history
+nmap <Leader>t :BTags<CR>| " Search for tags in the current buffer, no tags file needed
+nmap <Leader>T :Tags<CR>| " Search for tags in a project (vim-gutentags needed)
 " ---------------------------------------------------------------------------- ]
 
 " [ neomake --------------------------------------------------------------------
