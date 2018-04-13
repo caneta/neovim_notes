@@ -130,5 +130,8 @@ let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
 " let g:ale_javascript_eslint_options = '-c ~/liferay/progetti/cabel/portale-multibanca/workspace/.editor/.eslintrc.json'
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['eslint']
+let g:ale_fixers['css'] = ['stylelint']
+let g:ale_fixers['scss'] = ['stylelint']
+let g:ale_fixers['markdown'] = ['prettier']
 let g:ale_fix_on_save = 1
 " ---------------------------------------------------------------------------- ]
