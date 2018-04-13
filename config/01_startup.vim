@@ -6,13 +6,14 @@ call plug#begin('~/.config/nvim/plugins')
 
 " Look and feel
 Plug 'mhinz/vim-startify'       " [CONF] Fancy start screen
-Plug 'morhetz/gruvbox'          " Retro groove color scheme
-Plug 'tomasr/molokai'           " Monokai inspired color scheme
+" Plug 'morhetz/gruvbox'          " Retro groove color scheme
+" Plug 'tomasr/molokai'           " Monokai inspired color scheme
 Plug 'mhartington/oceanic-next' " Sublime Text inspired color scheme
 Plug 'ryanoasis/vim-devicons'   " [DEPS] File type icons to many plugins such as NERDTree, vim-airline, etc
 Plug 'vim-airline/vim-airline'  " [CONF] Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
-Plug 'shmargum/vim-sass-colors' " Color the background of a CSS colorname (Hex, RGBA, etc)
+" Plug 'shmargum/vim-sass-colors' " Color the background of a CSS colorname (Hex, RGBA, etc)
+Plug 'ap/vim-css-color'       " Color the background of a CSS colorname (Hex, RGBA, etc)
 Plug 'wellle/targets.vim'       " Additional text objects
 Plug 'blueyed/vim-diminactive'  " Dim inactive windows
 Plug 'matze/vim-move'           " Move lines avoiding cut and paste
@@ -22,7 +23,7 @@ Plug 'tpope/vim-commentary'      " Comment/uncomment code easily
 Plug 'tpope/vim-repeat'          " Extend the . command to make it work with plugins
 Plug 'tpope/vim-surround'        " Surround text with parenthesis, quotes, etc.
 Plug 'tpope/vim-unimpaired'      " Remaps to move between buffers, quickfix items and more
-Plug 'tpope/vim-fugitive'        " A git wrapper
+" Plug 'tpope/vim-fugitive'        " A git wrapper
 Plug 'tpope/vim-vinegar'         " Defines some netrw behaviours and mappings
 Plug 'godlygeek/tabular'         " Text filtering and alignment
 Plug 'easymotion/vim-easymotion' " Better vim motions
@@ -48,15 +49,15 @@ Plug 'mattn/emmet-vim'      " Expand abbreviations for Web Development with emme
 
 " Linting
 Plug 'ludovicchabant/vim-gutentags' " [DEPS] (Re)Generate tag files while you are working
-" Plug 'w0rp/ale'                     " Asynchronous linter for a lot of languages
-Plug 'neomake/neomake'              " [DEPS] Asynchronous make inspired by Syntactic plugin
+Plug 'w0rp/ale'                     " Asynchronous linter for a lot of languages
+" Plug 'neomake/neomake'              " [DEPS] Asynchronous make inspired by Syntactic plugin
 
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based
 Plug 'elzr/vim-json'               " Better Json syntax
 Plug 'othree/html5.vim'            " Better HTML5 syntax and omnicompletion
 Plug 'digitaltoad/vim-pug'         " Pug templating language
-Plug 'elixir-lang/vim-elixir'      " Elixir language support
+" Plug 'elixir-lang/vim-elixir'      " Elixir language support
 Plug 'mxw/vim-jsx'                 " React JSX templating language support
 
 call plug#end()

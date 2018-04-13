@@ -92,8 +92,8 @@ let g:vim_json_syntax_conceal=0 " Remove double quote hide
 " " [ neomake --------------------------------------------------------------------
 " autocmd! BufWritePost,BufEnter * Neomake " To run neomake automatically at file save
 
-let g:neomake_javascript_enabled_makers = ['eslint']
-call neomake#configure#automake('nirw')
+" let g:neomake_javascript_enabled_makers = ['eslint']
+" call neomake#configure#automake('nirw')
 " call neomake#configure#automake({
 "   \ 'TextChanged': {},
 "   \ 'InsertLeave': {},
@@ -103,10 +103,10 @@ call neomake#configure#automake('nirw')
 " let g:neomake_open_list = 1
 
 " how to display messages
-let g:neomake_warning_sign = { 'text': '⚠️' }
-let g:neomake_error_sign = { 'text': '❌' }
-let g:neomake_style_warning_sign = { 'text': '💩' }
-let g:neomake_style_error_sign = { 'text': '⁉️' }
+" let g:neomake_warning_sign = { 'text': '⚠️' }
+" let g:neomake_error_sign = { 'text': '❌' }
+" let g:neomake_style_warning_sign = { 'text': '💩' }
+" let g:neomake_style_error_sign = { 'text': '⁉️' }
 
 " let g:neomake_java_javac_maker = {
 " \ 'args': ['cp', '~/liferay/progetti/customer/project/bundles/tomcat-8.0.32/lib/ext'],
@@ -124,4 +124,11 @@ let g:neomake_style_error_sign = { 'text': '⁉️' }
 
 " [ vim-gutentags -------------------------------------------------------------------
 let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
+" ---------------------------------------------------------------------------- ]
+
+" [ Ale ------------------------------------------------------------------------
+" let g:ale_javascript_eslint_options = '-c ~/liferay/progetti/cabel/portale-multibanca/workspace/.editor/.eslintrc.json'
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['eslint']
+let g:ale_fix_on_save = 1
 " ---------------------------------------------------------------------------- ]
