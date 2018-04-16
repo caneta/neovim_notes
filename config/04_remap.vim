@@ -24,3 +24,6 @@ inoremap ''E <C-k>E!| " grave accent (i.e.: 'cioè', 'è')
 inoremap ''i <C-k>i!
 inoremap ''o <C-k>o!
 inoremap ''u <C-k>u!
+
+" Remap exit from terminal mode
+tnoremap <Esc> <C-\><C-n>
