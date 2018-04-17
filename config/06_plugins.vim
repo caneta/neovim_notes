@@ -37,12 +37,6 @@ let g:airline_theme='oceanicnext'
 let delimitMate_expand_cr=1 " Put a further <CR> after, for exampole a {<CR>
 " ---------------------------------------------------------------------------- ]
 
-" [ Colorizer ----------------------------------------------------------------
-let g:colorizer_auto_filetype='css,html,scss,jsp,ftl,js'
-let g:colorizer_skip_comments=1
-let g:colorizer_colornames=0
-" ---------------------------------------------------------------------------- ]
-
 " [ deoplete ----------------------------------------------------------------
 let g:deoplete#enable_at_startup=1
 " let g:deoplete#omni#functions = {}
