@@ -26,4 +26,4 @@ inoremap ''o <C-k>o!
 inoremap ''u <C-k>u!
 
 " Remap exit from terminal mode
-tnoremap <Esc> <C-\><C-n>
+" tnoremap <Esc> <C-\><C-n>
