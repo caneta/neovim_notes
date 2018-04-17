@@ -45,21 +45,22 @@ let g:colorizer_colornames=0
 
 " [ deoplete ----------------------------------------------------------------
 let g:deoplete#enable_at_startup=1
-let g:deoplete#omni#functions = {}
-let g:deoplete#omni#functions.javascript = [
-  \ 'tern#Complete',
-  \ 'jspc#omni'
-\]
-set completeopt=longest,menuone,preview
-set completeopt-=preview
-let g:deoplete#sources = {}
-let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
-let g:tern#command = ['tern']
-let g:tern#arguments = ['--persistent']
-autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+" let g:deoplete#omni#functions = {}
+" let g:deoplete#omni#functions.javascript = [
+"   \ 'tern#Complete',
+"   \ 'jspc#omni'
+" \]
+" set completeopt=longest,menuone,preview
+" set completeopt-=preview
+" let g:deoplete#sources = {}
+" let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
+" let g:tern#command = ['tern']
+" let g:tern#arguments = ['--persistent']
+" autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<C-x><C-o>"
 let g:UltiSnipsExpandTrigger="<C-j>"
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"| " Use tab to autocomplete
-autocmd CompleteDone * pclose! " Automatically close scratch window after selection
+" autocmd CompleteDone * pclose! " Automatically close scratch window after selection
+call deoplete#custom#source('ultisnips', 'matchers', ['matcher_fuzzy'])
 " ---------------------------------------------------------------------------- ]
 
 " [ deoplete-ternjs ------------------------------------------------------------
@@ -87,39 +88,6 @@ let g:vim_json_syntax_conceal=0 " Remove double quote hide
 
 " [ vim-jsx -------------------------------------------------------------------
 " let g:jsx_ext_required = 0
-" ---------------------------------------------------------------------------- ]
-
-" " [ neomake --------------------------------------------------------------------
-" autocmd! BufWritePost,BufEnter * Neomake " To run neomake automatically at file save
-
-" let g:neomake_javascript_enabled_makers = ['eslint']
-" call neomake#configure#automake('nirw')
-" call neomake#configure#automake({
-"   \ 'TextChanged': {},
-"   \ 'InsertLeave': {},
-"   \ 'BufWritePost': {'delay': 0},
-"   \ 'BufWinEnter': {},
-"   \ }, 500)
-" let g:neomake_open_list = 1
-
-" how to display messages
-" let g:neomake_warning_sign = { 'text': '⚠️' }
-" let g:neomake_error_sign = { 'text': '❌' }
-" let g:neomake_style_warning_sign = { 'text': '💩' }
-" let g:neomake_style_error_sign = { 'text': '⁉️' }
-
-" let g:neomake_java_javac_maker = {
-" \ 'args': ['cp', '~/liferay/progetti/customer/project/bundles/tomcat-8.0.32/lib/ext'],
-" \ }
-
-" let g:neomake_java_javac_maker = {
-" \ 'args': ['cp', '~/Scrivania/liferay-ce-portal-src-7.0-ga2'],
-" \ }
-
-
-" let g:neomake_scss_scsslint_maker = {
-" \ 'args': ['--config', '~/liferay/progetti/customer/project/themes/my-theme/src/css/.scss-lint.yml'],
-" \ }
 " ---------------------------------------------------------------------------- ]
 
 " [ vim-gutentags -------------------------------------------------------------------

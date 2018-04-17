@@ -29,6 +29,7 @@ Plug 'henrik/vim-indexed-search' " When perform a search, it prints automaticall
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line Fuzzy Finder
 Plug 'junegunn/fzf.vim'             " FZF Neovim Wrapper
 Plug 'ludovicchabant/vim-gutentags' " [DEPS] (Re)Generate tag files while you are working
+Plug 'majutsushi/tagbar'    " [DEPS] Class outline viewer: ctags dependency needed
 
 " Autocompletion
 Plug 'ervandew/supertab' " Use Tab for insert mode auto completion
