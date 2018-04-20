@@ -46,7 +46,7 @@ let g:deoplete#enable_at_startup=1
 " \]
 " set completeopt=longest,menuone,preview
 " set completeopt-=preview
-" let g:deoplete#sources = {}
+let g:deoplete#sources = {}
 " let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
 " let g:tern#command = ['tern']
 " let g:tern#arguments = ['--persistent']
@@ -54,7 +54,7 @@ let g:deoplete#enable_at_startup=1
 let g:UltiSnipsExpandTrigger="<C-j>"
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"| " Use tab to autocomplete
 " autocmd CompleteDone * pclose! " Automatically close scratch window after selection
-call deoplete#custom#source('ultisnips', 'matchers', ['matcher_fuzzy'])
+" call deoplete#custom#source('ultisnips', 'matchers', ['matcher_fuzzy'])
 " ---------------------------------------------------------------------------- ]
 
 " [ deoplete-ternjs ------------------------------------------------------------
@@ -95,5 +95,6 @@ let g:ale_fixers['javascript'] = ['eslint']
 let g:ale_fixers['css'] = ['stylelint']
 let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_fixers['markdown'] = ['prettier']
+let g:ale_javascript_prettier_options = '--use-tabs --tab-width=4' " This is
 let g:ale_fix_on_save = 1
 " ---------------------------------------------------------------------------- ]
