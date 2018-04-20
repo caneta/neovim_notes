@@ -21,6 +21,7 @@ Plug 'tpope/vim-repeat'          " Extend the . command to make it work with plu
 Plug 'tpope/vim-surround'        " Surround text with parenthesis, quotes, etc.
 Plug 'tpope/vim-unimpaired'      " Remaps to move between buffers, quickfix items and more
 Plug 'tpope/vim-vinegar'         " Defines some netrw behaviours and mappings
+Plug 'tpope/vim-fugitive'        " Git wrapper
 Plug 'godlygeek/tabular'         " Text filtering and alignment
 Plug 'easymotion/vim-easymotion' " Better vim motions
 Plug 'henrik/vim-indexed-search' " When perform a search, it prints automatically 'At match #N out of M matches'
