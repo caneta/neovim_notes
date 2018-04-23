@@ -15,6 +15,7 @@ map <leader>n :enew<CR>|         " Open a new buffer in a new window
 map <leader>b :bd<CR>|           " Close the current buffer
 map <leader>o :on<CR>|           " Close every buffer, but the current one
 vnoremap <leader>s :sort<CR>|    " Visual mode: sort selection alphabetically
+nmap <leader>ff :echo @%<CR>|    " Print file name with relative path to curdir
 
 " Remaps for accented vowels
 inoremap ''a <C-k>a!
@@ -25,5 +26,4 @@ inoremap ''i <C-k>i!
 inoremap ''o <C-k>o!
 inoremap ''u <C-k>u!
 
-" Remap exit from terminal mode
-" tnoremap <Esc> <C-\><C-n>
+" 
