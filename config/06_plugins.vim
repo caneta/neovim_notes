@@ -95,6 +95,6 @@ let g:ale_fixers['javascript'] = ['eslint']
 let g:ale_fixers['css'] = ['stylelint']
 let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_fixers['markdown'] = ['prettier']
-let g:ale_javascript_prettier_options = '--use-tabs --tab-width=4' " This is
+let g:ale_javascript_prettier_options = '--use-tabs' " This is
 let g:ale_fix_on_save = 1
 " ---------------------------------------------------------------------------- ]
