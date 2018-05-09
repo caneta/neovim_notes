@@ -20,10 +20,6 @@ let g:startify_bookmarks = [
 \]
 " ---------------------------------------------------------------------------- ]
 
-" [ vim-move -------------------------------------------------------------------
-let g:move_key_modifier = 'C' " Move a block with <C-C>
-" ---------------------------------------------------------------------------- ]
-
 " [ vim-airline ----------------------------------------------------------------
 let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts=1 " Use powerline fonts, installed with nerd fonts
