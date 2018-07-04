@@ -39,7 +39,7 @@ Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascr
 Plug 'steelsojka/deoplete-flow', { 'do': 'npm install -g flow-bin' }
 
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
-Plug 'honza/vim-snippets' " List of a lot of snippets
+" Plug 'honza/vim-snippets' " List of a lot of snippets
 Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] } " [DEPS] Tern-based JavaScript editing support
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] } " Completion for function parameters
 Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typing
