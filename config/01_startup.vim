@@ -34,9 +34,10 @@ Plug 'majutsushi/tagbar'    " [DEPS] Class outline viewer: ctags dependency need
 
 " Autocompletion
 Plug 'ervandew/supertab' " Use Tab for insert mode auto completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }    " [DEPS] Asynchronous keyword completion (depends on Python 3 neovim package)
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] } " [DEPS] JavaScript source for deoplete (depends on Node.js)
-Plug 'steelsojka/deoplete-flow', { 'do': 'npm install -g flow-bin' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }    " [DEPS] Asynchronous keyword completion (depends on Python 3 neovim package)
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] } " [DEPS] JavaScript source for deoplete (depends on Node.js)
+" Plug 'steelsojka/deoplete-flow', { 'do': 'npm install -g flow-bin' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' } " [DEPS] Asynchronous keyword completion
 
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
 " Plug 'honza/vim-snippets' " List of a lot of snippets

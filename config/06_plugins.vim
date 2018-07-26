@@ -33,31 +33,6 @@ let g:airline_theme='oceanicnext'
 let delimitMate_expand_cr=1 " Put a further <CR> after, for exampole a {<CR>
 " ---------------------------------------------------------------------------- ]
 
-" [ deoplete ----------------------------------------------------------------
-let g:deoplete#enable_at_startup=1
-" let g:deoplete#omni#functions = {}
-" let g:deoplete#omni#functions.javascript = [
-"   \ 'tern#Complete',
-"   \ 'jspc#omni'
-" \]
-" set completeopt=longest,menuone,preview
-" set completeopt-=preview
-let g:deoplete#sources = {}
-" let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
-" let g:tern#command = ['tern']
-" let g:tern#arguments = ['--persistent']
-" autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<C-x><C-o>"
-let g:UltiSnipsExpandTrigger="<C-j>"
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"| " Use tab to autocomplete
-" autocmd CompleteDone * pclose! " Automatically close scratch window after selection
-" call deoplete#custom#source('ultisnips', 'matchers', ['matcher_fuzzy'])
-" ---------------------------------------------------------------------------- ]
-
-" [ deoplete-ternjs ------------------------------------------------------------
-let g:tern_request_timeout=1
-" let g:tern_show_signature_in_pum=0  " This do disable full signature type on autocomplete
-" ---------------------------------------------------------------------------- ]
-
 " [ vim-commentary -------------------------------------------------------------
 autocmd FileType sql set commentstring=--\ %s
 autocmd FileType jsp set commentstring=<%--\ %s\ --%>
