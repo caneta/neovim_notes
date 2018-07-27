@@ -51,16 +51,11 @@ let g:indentLine_char="┊" " Custom character for vertical lines highlighting i
 let g:vim_json_syntax_conceal=0 " Remove double quote hide
 " ---------------------------------------------------------------------------- ]
 
-" [ vim-jsx -------------------------------------------------------------------
-" let g:jsx_ext_required = 0
-" ---------------------------------------------------------------------------- ]
-
 " [ vim-gutentags --------------------------------------------------------------
 let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
 " ---------------------------------------------------------------------------- ]
 
 " [ Ale ------------------------------------------------------------------------
-" let g:ale_javascript_eslint_options = '-c ~/liferay/progetti/cabel/portale-multibanca/workspace/.editor/.eslintrc.json'
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['eslint']
 let g:ale_fixers['css'] = ['stylelint']
@@ -68,6 +63,13 @@ let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_fixers['markdown'] = ['prettier']
 let g:ale_javascript_prettier_options = '--use-tabs' " This is
 let g:ale_fix_on_save = 1
+" ---------------------------------------------------------------------------- ]
+
+" [ YouCompleteMe --------------------------------------------------------------
+let g:ycm_semantic_triggers = {
+    \   'css': [ 're!^', 're!^\s+', ': ' ],
+    \   'scss': [ 're!^', 're!^\s+', ': ' ],
+    \ }
 " ---------------------------------------------------------------------------- ]
 
 " [ MatchTagAlways -------------------------------------------------------------
@@ -79,4 +81,13 @@ let g:mta_filetypes = {
     \ 'jsp' : 1,
     \ 'freemarker' : 1,
     \}
+" ---------------------------------------------------------------------------- ]
+
+" [ Ultisnips ------------------------------------------------------------------
+" Trigger configuration. Do not use <tab> if you use YouCompleteMe
+let g:UltiSnipsSnippetsDir="~/.config/nvim/UltiSnips/"
+let g:UltiSnipsExpandTrigger="<c-j>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 " ---------------------------------------------------------------------------- ]

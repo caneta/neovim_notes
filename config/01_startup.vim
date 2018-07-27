@@ -34,11 +34,8 @@ Plug 'majutsushi/tagbar'    " [DEPS] Class outline viewer: ctags dependency need
 
 " Autocompletion
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' } " [DEPS] Asynchronous keyword completion
-
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
-" Plug 'honza/vim-snippets' " List of a lot of snippets
-Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] } " [DEPS] Tern-based JavaScript editing support
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] } " Completion for function parameters
+Plug 'honza/vim-snippets' " List of a lot of snippets
 Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typing
 Plug 'mattn/emmet-vim'      " Expand abbreviations for Web Development with emmet syntax
 
@@ -50,6 +47,5 @@ Plug 'andreshazard/vim-freemarker' " Apache templating language, java based
 Plug 'elzr/vim-json'               " Better Json syntax
 Plug 'othree/html5.vim'            " Better HTML5 syntax and omnicompletion
 Plug 'digitaltoad/vim-pug'         " Pug templating language
-Plug 'mxw/vim-jsx'                 " React JSX templating language support
 
 call plug#end()

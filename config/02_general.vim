@@ -26,3 +26,7 @@ set iskeyword+=\-          " Makes dashed variables like $my-variable, available
 
 " Disable continuation of comments to the next line
 autocmd FileType * set formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Omnifunc autocompletion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
