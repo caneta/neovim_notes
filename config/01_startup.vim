@@ -14,6 +14,7 @@ Plug 'ap/vim-css-color'         " Color the background of a CSS colorname (Hex, 
 Plug 'wellle/targets.vim'       " Additional text objects
 Plug 'blueyed/vim-diminactive'  " Dim inactive windows
 Plug 'matze/vim-move'           " Move lines avoiding cut and paste
+Plug 'Valloric/MatchTagAlways'  " Highlight tag in which I'm in
 
 " Utilities
 Plug 'tpope/vim-commentary'      " Comment/uncomment code easily

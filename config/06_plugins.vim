@@ -55,7 +55,7 @@ let g:vim_json_syntax_conceal=0 " Remove double quote hide
 " let g:jsx_ext_required = 0
 " ---------------------------------------------------------------------------- ]
 
-" [ vim-gutentags -------------------------------------------------------------------
+" [ vim-gutentags --------------------------------------------------------------
 let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
 " ---------------------------------------------------------------------------- ]
 
@@ -68,4 +68,15 @@ let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_fixers['markdown'] = ['prettier']
 let g:ale_javascript_prettier_options = '--use-tabs' " This is
 let g:ale_fix_on_save = 1
+" ---------------------------------------------------------------------------- ]
+
+" [ MatchTagAlways -------------------------------------------------------------
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'jsp' : 1,
+    \ 'freemarker' : 1,
+    \}
 " ---------------------------------------------------------------------------- ]
