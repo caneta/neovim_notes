@@ -22,7 +22,6 @@ Plug 'tpope/vim-surround'        " Surround text with parenthesis, quotes, etc.
 Plug 'tpope/vim-unimpaired'      " Remaps to move between buffers, quickfix items and more
 Plug 'tpope/vim-vinegar'         " Defines some netrw behaviours and mappings
 Plug 'tpope/vim-fugitive'        " Git wrapper
-Plug 'godlygeek/tabular'         " Text filtering and alignment
 Plug 'easymotion/vim-easymotion' " Better vim motions
 Plug 'henrik/vim-indexed-search' " When perform a search, it prints automatically 'At match #N out of M matches'
 
@@ -33,10 +32,6 @@ Plug 'ludovicchabant/vim-gutentags' " [DEPS] (Re)Generate tag files while you ar
 Plug 'majutsushi/tagbar'    " [DEPS] Class outline viewer: ctags dependency needed
 
 " Autocompletion
-Plug 'ervandew/supertab' " Use Tab for insert mode auto completion
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }    " [DEPS] Asynchronous keyword completion (depends on Python 3 neovim package)
-" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] } " [DEPS] JavaScript source for deoplete (depends on Node.js)
-" Plug 'steelsojka/deoplete-flow', { 'do': 'npm install -g flow-bin' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' } " [DEPS] Asynchronous keyword completion
 
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
@@ -47,7 +42,7 @@ Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typ
 Plug 'mattn/emmet-vim'      " Expand abbreviations for Web Development with emmet syntax
 
 " Linting
-Plug 'w0rp/ale'                     " Asynchronous linter for a lot of languages
+Plug 'w0rp/ale' " Asynchronous linter for a lot of languages
 
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based
