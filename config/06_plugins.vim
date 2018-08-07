@@ -55,6 +55,20 @@ let g:vim_json_syntax_conceal=0 " Remove double quote hide
 let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
 " ---------------------------------------------------------------------------- ]
 
+" [ vim-gutentags_plus --------------------------------------------------------
+" enable gtags module
+let g:gutentags_modules = ['ctags', 'gtags_cscope']
+
+" config project root markers.
+let g:gutentags_project_root = ['.root']
+
+" generate datebases in my cache directory, prevent gtags files polluting my project
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+
+" forbid gutentags adding gtags databases
+let g:gutentags_auto_add_gtags_cscope = 0
+" ---------------------------------------------------------------------------- ]
+
 " [ Ale ------------------------------------------------------------------------
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['eslint']
