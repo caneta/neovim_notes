@@ -34,7 +34,12 @@ Plug 'skywind3000/gutentags_plus' " Keeps gutentags on separate databases
 Plug 'majutsushi/tagbar'    " [DEPS] Class outline viewer: ctags dependency needed
 
 " Autocompletion
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' } " [DEPS] Asynchronous keyword completion
+Plug 'autozimu/LanguageClient-neovim', {'branch':'next', 'do':'bash install.sh'} " Language Server Protocol
+Plug 'ncm2/ncm2' " Autocompletion framework
+Plug 'roxma/nvim-yarp' " Remote plugin framework, depency for ncm2
+Plug 'ncm2/ncm2-bufword' " ncm2 autocompletion sources for current buffer
+Plug 'ncm2/ncm2-path' " ncm2 autocompletion sources for file paths
+Plug 'ncm2/ncm2-ultisnips' " ncm2 autocompletion sources for ultisnips
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
 Plug 'honza/vim-snippets' " List of a lot of snippets
 Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typing

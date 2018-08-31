@@ -79,11 +79,11 @@ let g:ale_javascript_prettier_options = '--use-tabs' " This is
 let g:ale_fix_on_save = 1
 " ---------------------------------------------------------------------------- ]
 
-" [ YouCompleteMe --------------------------------------------------------------
-let g:ycm_semantic_triggers = {
-    \   'css': [ 're!^', 're!^\s+', ': ' ],
-    \   'scss': [ 're!^', 're!^\s+', ': ' ],
-    \ }
+" [ ncm2 -----------------------------------------------------------------------
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+" IMPORTANT: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
 " ---------------------------------------------------------------------------- ]
 
 " [ MatchTagAlways -------------------------------------------------------------
