@@ -82,8 +82,19 @@ let g:ale_fix_on_save = 1
 " [ ncm2 -----------------------------------------------------------------------
 " enable ncm2 for all buffers
 autocmd BufEnter * call ncm2#enable_for_buffer()
+
 " IMPORTANT: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
+
+" Use <TAB> to select the popup menu:
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" ---------------------------------------------------------------------------- ]
+
+" [ LanguageClient-neovim ------------------------------------------------------
+let g:LanguageClient_serverCommands = {
+  \ 'javascript': ['javascript-typescript-stdio']
+  \ }
 " ---------------------------------------------------------------------------- ]
 
 " [ MatchTagAlways -------------------------------------------------------------
