@@ -93,6 +93,8 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " [ LanguageClient-neovim ------------------------------------------------------
 let g:LanguageClient_serverCommands = {
+  \ 'css': ['css-languageserver', '--stdio'],
+  \ 'scss': ['css-languageserver', '--stdio'],
   \ 'javascript': ['javascript-typescript-stdio']
   \ }
 " ---------------------------------------------------------------------------- ]
