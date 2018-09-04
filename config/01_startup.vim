@@ -18,11 +18,13 @@ Plug 'Valloric/MatchTagAlways'  " Highlight tag in which I'm in
 
 " Utilities
 Plug 'tpope/vim-commentary'      " Comment/uncomment code easily
-Plug 'tpope/vim-repeat'          " Extend the . command to make it work with plugins
 Plug 'tpope/vim-surround'        " Surround text with parenthesis, quotes, etc.
 Plug 'tpope/vim-unimpaired'      " Remaps to move between buffers, quickfix items and more
 Plug 'tpope/vim-vinegar'         " Defines some netrw behaviours and mappings
 Plug 'tpope/vim-fugitive'        " Git wrapper
+Plug 'tpope/vim-repeat'          " Extend the . command to make it work with plugins
+Plug 'tpope/vim-speeddating'     " Use CTRL-A/CTRL-X to increment dates, times, and more
+Plug 'tpope/vim-characterize'    " Adds information to UTF characters metadata with ga command
 Plug 'easymotion/vim-easymotion' " Better vim motions
 Plug 'henrik/vim-indexed-search' " When perform a search, it prints automatically 'At match #N out of M matches'
 
@@ -40,6 +42,7 @@ Plug 'roxma/nvim-yarp' " Remote plugin framework, depency for ncm2
 Plug 'ncm2/ncm2-bufword' " ncm2 autocompletion sources for current buffer
 Plug 'ncm2/ncm2-path' " ncm2 autocompletion sources for file paths
 Plug 'ncm2/ncm2-ultisnips' " ncm2 autocompletion sources for ultisnips
+Plug 'ncm2/ncm2-tagprefix' " ncm2 autocompletion sources for tags prefix completion
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
 Plug 'honza/vim-snippets' " List of a lot of snippets
 Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typing
