@@ -26,11 +26,7 @@ let g:airline_powerline_fonts=1 " Use powerline fonts, installed with nerd fonts
 let g:airline#extensions#tabline#enabled=1 " Set enhanced tabline
 let g:airline#extensions#tabline#fnamemod=':t' " Filename format: tail of the filename
 let g:airline#extensions#tabline#buffer_idx_mode = 1 " Show tab numbers
-" ---------------------------------------------------------------------------- ]
-
-" [ delimitMate ----------------------------------------------------------------
 let g:airline_theme='oceanicnext'
-let delimitMate_expand_cr=1 " Put a further <CR> after, for exampole a {<CR>
 " ---------------------------------------------------------------------------- ]
 
 " [ vim-commentary -------------------------------------------------------------
@@ -88,7 +84,7 @@ set completeopt=noinsert,menuone,noselect,preview
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " ---------------------------------------------------------------------------- ]
 
 " [ LanguageClient-neovim ------------------------------------------------------
@@ -117,4 +113,9 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+" ---------------------------------------------------------------------------- ]
+
+" [ delimitMate ----------------------------------------------------------------
+let delimitMate_expand_cr=1 " Put a further <CR> after, for example a {<CR>
+imap <C-J> <Plug>delimitMateS-Tab
 " ---------------------------------------------------------------------------- ]
