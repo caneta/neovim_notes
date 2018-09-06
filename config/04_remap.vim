@@ -9,7 +9,7 @@ nnoremap <leader>v "+p|          " Normal mode: paste from the system clipboard 
 inoremap <leader>v <C-r><C-p>+|  " Insert mode: paste from the system clipboard with \v
 map <leader>e :Explore<CR>|      " Open netrw Esplore window
 map <leader>w :wa<CR>|           " Save every buffer
-inoremap <leader>w <Esc>:wa<CR>| " Save every buffer (insert mode)
+inoremap <leader>w <Esc>:wa<CR>i| " Save every buffer (insert mode)
 map <leader>q :wqa<CR>|          " Save every buffer and exit
 map <leader>n :enew<CR>|         " Open a new buffer in a new window
 map <leader>b :bd<CR>|           " Close the current buffer
@@ -21,7 +21,7 @@ nmap <leader>ff :echo @%<CR>|    " Print file name with relative path to curdir
 inoremap ''a <C-k>a!
 inoremap ,e <C-k>e'|  " acute accent (i.e.: 'perché', 'sé')
 inoremap ''e <C-k>e!| " grave accent (i.e.: 'cioè', 'è')
-inoremap ''E <C-k>E!| " grave accent (i.e.: 'cioè', 'è')
+inoremap ''E <C-k>E!| " uppercase grave accent (i.e.: 'cioè', 'è')
 inoremap ''i <C-k>i!
 inoremap ''o <C-k>o!
 inoremap ''u <C-k>u!

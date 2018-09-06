@@ -80,18 +80,22 @@ let g:ale_fix_on_save = 1
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
-set completeopt=noinsert,menuone,noselect,preview
+set completeopt=noinsert,menuone,noselect
+
+" show information about identifier in autocompletion popup menu
+" set completeopt+=preview
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " ---------------------------------------------------------------------------- ]
 
 " [ LanguageClient-neovim ------------------------------------------------------
 let g:LanguageClient_serverCommands = {
   \ 'css': ['css-languageserver', '--stdio'],
   \ 'scss': ['css-languageserver', '--stdio'],
-  \ 'javascript': ['javascript-typescript-stdio']
+  \ 'javascript': ['javascript-typescript-stdio'],
+  \ 'html': ['html-languageserver', '--stdio']
   \ }
 " ---------------------------------------------------------------------------- ]
 
@@ -108,8 +112,9 @@ let g:mta_filetypes = {
 
 " [ Ultisnips ------------------------------------------------------------------
 " Trigger configuration. Do not use <tab> if you use YouCompleteMe
-let g:UltiSnipsSnippetsDir="~/.config/nvim/UltiSnips/"
 let g:UltiSnipsExpandTrigger="<c-j>"
+
+let g:UltiSnipsSnippetsDir="~/.config/nvim/UltiSnips/"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -117,5 +122,5 @@ let g:UltiSnipsEditSplit="vertical"
 
 " [ delimitMate ----------------------------------------------------------------
 let delimitMate_expand_cr=1 " Put a further <CR> after, for example a {<CR>
-imap <C-J> <Plug>delimitMateS-Tab
+imap <C-L> <Plug>delimitMateS-Tab
 " ---------------------------------------------------------------------------- ]

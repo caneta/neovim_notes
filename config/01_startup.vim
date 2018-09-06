@@ -43,6 +43,7 @@ Plug 'ncm2/ncm2-bufword' " ncm2 autocompletion sources for current buffer
 Plug 'ncm2/ncm2-path' " ncm2 autocompletion sources for file paths
 Plug 'ncm2/ncm2-ultisnips' " ncm2 autocompletion sources for ultisnips
 Plug 'ncm2/ncm2-tagprefix' " ncm2 autocompletion sources for tags prefix completion
+Plug 'ncm2/ncm2-html-subscope' " Detect javascript/css subscope from html code
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
 Plug 'honza/vim-snippets' " List of a lot of snippets
 Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typing
