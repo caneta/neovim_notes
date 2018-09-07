@@ -125,3 +125,7 @@ let g:UltiSnipsEditSplit="vertical"
 let delimitMate_expand_cr=1 " Put a further <CR> after, for example a {<CR>
 imap <C-L> <Plug>delimitMateS-Tab
 " ---------------------------------------------------------------------------- ]
+
+" [ vim-emoji ------------------------------------------------------------------
+set completefunc=emoji#complete
+" ---------------------------------------------------------------------------- ]
