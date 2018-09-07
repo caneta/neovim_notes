@@ -22,6 +22,7 @@ set clipboard+=unnamedplus " to put yanked lines into clipboard
 set hidden                 " Switching to another buffer, it hides already opened and modified buffers instead of closing them
 set nobackup               " Do not produce backup files with ~ postfix
 set iskeyword+=\-          " Makes dashed variables like $my-variable, available for autocompletion
+set updatetime=100         " If nothing happens on screen, after how many ms the swap file is written to disk (default is 4000)
 
 " Disable continuation of comments to the next line
 autocmd FileType * set formatoptions-=c formatoptions-=r formatoptions-=o
