@@ -28,7 +28,7 @@ Plug 'tpope/vim-repeat'          " Extend the . command to make it work with plu
 Plug 'tpope/vim-speeddating'     " Use CTRL-A/CTRL-X to increment dates, times, and more
 Plug 'tpope/vim-characterize'    " Adds information to UTF characters metadata with ga command
 Plug 'easymotion/vim-easymotion' " Better vim motions
-Plug 'henrik/vim-indexed-search' " When perform a search, it prints automatically 'At match #N out of M matches'
+Plug 'google/vim-searchindex'    " When perform a search, it prints automatically 'At match #N out of M matches'
 
 " Source files navigation
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line Fuzzy Finder
@@ -46,6 +46,7 @@ Plug 'ncm2/ncm2-path' " ncm2 autocompletion sources for file paths
 Plug 'ncm2/ncm2-ultisnips' " ncm2 autocompletion sources for ultisnips
 Plug 'ncm2/ncm2-tagprefix' " ncm2 autocompletion sources for tags prefix completion
 Plug 'ncm2/ncm2-html-subscope' " Detect javascript/css subscope from html code
+Plug 'yuki-ycino/ncm2-dictionary' " ncm2 autocompletion sources for dictionary
 
 Plug 'SirVer/ultisnips' " Autocompletion with snippets
 Plug 'honza/vim-snippets' " List of a lot of snippets

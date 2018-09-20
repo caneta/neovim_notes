@@ -2,9 +2,7 @@
 
 " Disable IndentLine plugin for Markdown files because it sets conceallevel=2
 autocmd FileType markdown let g:indentLine_enabled=0
-" autocmd FileType markdown set softtabstop=4 " How many spaces instead of a <Tab>
-" autocmd FileType markdown set shiftwidth=4  " How many spaces with autoindent
-" autocmd FileType markdown set tabstop=4     " Number of spaces used to visually represent a <Tab>
+" autocmd BufRead,BufNewFile *.md setlocal spell spelllang=it
 " ---------------------------------------------------------------------------- ]
 
 
