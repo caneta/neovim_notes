@@ -1,3 +1,14 @@
+" General
+set number                 " Set line numbers
+set title                  " Set title in terminal window
+set clipboard+=unnamedplus " to put yanked lines into clipboard
+set hidden                 " Switching to another buffer, it hides already opened and modified buffers instead of closing them
+set nobackup               " Do not produce backup files with ~ postfix
+set iskeyword+=\-          " Makes dashed variables like $my-variable, available for autocompletion
+set updatetime=100         " If nothing happens on screen, after how many ms the swap file is written to disk (default is 4000)
+filetype plugin on         " Detect file types
+syntax enable              " Switch on syntax highlighting
+
 " Indentation
 set autoindent    " Copy indent from current line when starting a new line
 set smartindent   " Do smart autoindenting when starting a new line
@@ -15,18 +26,5 @@ set foldcolumn=2      " show columns of folding representation at a side of wind
 set foldlevel=1       " folds with a higher level will be closed
 set foldnestmax=2     " deepest fold nesting
 
-" Other
-set number                 " Set line numbers
-set title                  " Set title in terminal window
-set clipboard+=unnamedplus " to put yanked lines into clipboard
-set hidden                 " Switching to another buffer, it hides already opened and modified buffers instead of closing them
-set nobackup               " Do not produce backup files with ~ postfix
-set iskeyword+=\-          " Makes dashed variables like $my-variable, available for autocompletion
-set updatetime=100         " If nothing happens on screen, after how many ms the swap file is written to disk (default is 4000)
-
-" Disable continuation of comments to the next line
-autocmd FileType * set formatoptions-=c formatoptions-=r formatoptions-=o
-
-" Omnifunc autocompletion
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
+" Autocompletion
+set omnifunc=syntaxcomplete#Complete " Omnifunc autocompletion

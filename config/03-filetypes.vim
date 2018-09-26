@@ -1,15 +1,11 @@
-" [ Markdown -------------------------------------------------------------------
+" Disable continuation of comments to the next line
+autocmd FileType * set formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Disable IndentLine plugin for Markdown files because it sets conceallevel=2
-autocmd FileType markdown let g:indentLine_enabled=0
+" Set spelllang for markdown files
 " autocmd BufRead,BufNewFile *.md setlocal spell spelllang=it
-" ---------------------------------------------------------------------------- ]
 
-
-" [ JSPF -----------------------------------------------------------------------
-
-autocmd BufNewFile,BufRead *.jspf set syntax=jsp " Force jsp syntax for jsp fragment files
-" ---------------------------------------------------------------------------- ]
+" Force jsp syntax for jsp fragment files
+autocmd BufNewFile,BufRead *.jspf set syntax=jsp
 
 " [ Git ------------------------------------------------------------------------
 

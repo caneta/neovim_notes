@@ -1,8 +1,6 @@
-source ~/.config/nvim/config/01_startup.vim
-source ~/.config/nvim/config/02_general.vim
-source ~/.config/nvim/config/03_lookAndFeel.vim
-source ~/.config/nvim/config/04_remap.vim
-source ~/.config/nvim/config/05_fileTypes.vim
-source ~/.config/nvim/config/06_plugins.vim
-source ~/.config/nvim/config/07_pluginsRemap.vim
-source ~/.config/nvim/config/08_liferay.vim
+source ~/.config/nvim/config/01-basic.vim
+source ~/.config/nvim/config/02-remaps.vim
+source ~/.config/nvim/config/03-filetypes.vim
+source ~/.config/nvim/config/04-plugins.vim
+source ~/.config/nvim/config/05-plugins-settings.vim
+source ~/.config/nvim/config/06-appearance.vim
