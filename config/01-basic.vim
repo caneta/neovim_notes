@@ -1,4 +1,4 @@
-" General
+" So" General
 set number                 " Set line numbers
 set title                  " Set title in terminal window
 set clipboard+=unnamedplus " to put yanked lines into clipboard
@@ -6,11 +6,10 @@ set hidden                 " Switching to another buffer, it hides already opene
 set nobackup               " Do not produce backup files with ~ postfix
 set iskeyword+=\-          " Makes dashed variables like $my-variable, available for autocompletion
 set updatetime=100         " If nothing happens on screen, after how many ms the swap file is written to disk (default is 4000)
-filetype plugin on         " Detect file types
+filetype plugin indent on  " Detect file types, load its plugin and apply its indentation
 syntax enable              " Switch on syntax highlighting
 
 " Indentation
-set autoindent    " Copy indent from current line when starting a new line
 set smartindent   " Do smart autoindenting when starting a new line
 set ignorecase    " Our search will be case insensitive by default: without this, set smartcase does not work!
 set smartcase     " Our search will be case sensitive if it contains an uppercase letter
