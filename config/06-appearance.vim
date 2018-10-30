@@ -4,6 +4,7 @@ set background=dark                     " Set colorscheme dark variant
 set list                                " Display unprintable characters
 set listchars=tab:▸\ ,eol:¬             " Redefine unprintable characters
 set cursorline                          " Highlight current line
+set cursorcolumn                        " Highlight current column
 set showmatch                           " blink on matching brackets
 let &colorcolumn=join(range(82,82),",") " set different color for column 81
 set showbreak=↪                         " show symbol on wrapped lines
