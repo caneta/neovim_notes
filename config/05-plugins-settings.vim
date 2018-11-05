@@ -67,21 +67,17 @@ let g:vim_json_syntax_conceal=0 " Remove double quote hide
 " ---------------------------------------------------------------------------- ]
 
 " [ vim-gutentags --------------------------------------------------------------
+" generate datebases in my cache directory, prevent gtags files polluting my project
+let g:gutentags_cache_dir = expand('~/.cache/tags')
 let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
+let g:gutentags_generate_on_missing = 0
+let g:gutentags_generate_on_new = 0
+let g:gutentags_generate_on_write = 0
 " ---------------------------------------------------------------------------- ]
 
 " [ vim-gutentags_plus --------------------------------------------------------
-" enable gtags module
-let g:gutentags_modules = ['ctags', 'gtags_cscope']
-
-" config project root markers.
-let g:gutentags_project_root = ['.root']
-
-" generate datebases in my cache directory, prevent gtags files polluting my project
-let g:gutentags_cache_dir = expand('~/.cache/tags')
-
-" forbid gutentags adding gtags databases
-let g:gutentags_auto_add_gtags_cscope = 0
+" Disable gutentags_plus default remaps
+let g:gutentags_plus_nomap = 1
 " ---------------------------------------------------------------------------- ]
 
 " [ Ale ------------------------------------------------------------------------

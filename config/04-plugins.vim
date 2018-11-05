@@ -15,7 +15,7 @@ Plug 'wellle/targets.vim'       " Additional text objects
 Plug 'blueyed/vim-diminactive'  " Dim inactive windows
 Plug 'matze/vim-move'           " Move lines avoiding cut and paste
 Plug 'Valloric/MatchTagAlways'  " Highlight tag in which I'm in
-Plug 'mhinz/vim-signify'        " Show git diff in the gutter
+" Plug 'mhinz/vim-signify'        " Show git diff in the gutter
 Plug 'junegunn/vim-emoji'       " Write emoji in vim, like :blu and pressing <C-x><C-u>
 Plug 'markonm/traces.vim'       " Range, pattern and substitute preview
 
