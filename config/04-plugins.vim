@@ -17,6 +17,7 @@ Plug 'matze/vim-move'           " Move lines avoiding cut and paste
 Plug 'Valloric/MatchTagAlways'  " Highlight tag in which I'm in
 Plug 'mhinz/vim-signify'        " Show git diff in the gutter
 Plug 'junegunn/vim-emoji'       " Write emoji in vim, like :blu and pressing <C-x><C-u>
+Plug 'markonm/traces.vim'       " Range, pattern and substitute preview
 
 " Utilities
 Plug 'tpope/vim-commentary'      " Comment/uncomment code easily
@@ -29,10 +30,13 @@ Plug 'tpope/vim-speeddating'     " Use CTRL-A/CTRL-X to increment dates, times, 
 Plug 'tpope/vim-characterize'    " Adds information to UTF characters metadata with ga command
 Plug 'easymotion/vim-easymotion' " Better vim motions
 Plug 'google/vim-searchindex'    " When perform a search, it prints automatically 'At match #N out of M matches'
+Plug 'Valloric/ListToggle'       " Open location list and quickfix list with ease
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }} " Markdown preview
 
 " Source files navigation
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line Fuzzy Finder
 Plug 'junegunn/fzf.vim'             " FZF Neovim Wrapper
+Plug 'jesseleite/vim-agriculture'   " Make possible to use silver searcher (Ag) with fzf like in the command line
 Plug 'ludovicchabant/vim-gutentags' " [DEPS] (Re)Generate tag files while you are working
 Plug 'skywind3000/gutentags_plus'   " Keeps gutentags on separate databases
 Plug 'majutsushi/tagbar'            " [DEPS] Class outline viewer: ctags dependency needed

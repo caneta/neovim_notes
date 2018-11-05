@@ -39,10 +39,16 @@ autocmd FileType freemarker set commentstring=<#--\ %s\ -->
 nmap <leader>f :GFiles <CR>| " Search git versioned files in the current dir
 nmap <leader>F :Files <CR>|  " Search files in the current dir
 nmap <leader>g :Ag <CR>|     " Search strings ag
-nmap <Leader>B :Buffers<CR>| " Search in open buffers
-nmap <Leader>h :History<CR>| " Search in buffer history
-nmap <Leader>t :BTags<CR>|   " Search for tags in the current buffer, no tags file needed
-nmap <Leader>T :Tags<CR>|    " Search for tags in a project (vim-gutentags needed)
+nmap <leader>B :Buffers<CR>| " Search in open buffers
+nmap <leader>h :History<CR>| " Search in buffer history
+nmap <leader>t :BTags<CR>|   " Search for tags in the current buffer, no tags file needed
+nmap <leader>T :Tags<CR>|    " Search for tags in a project (vim-gutentags needed)
+" ---------------------------------------------------------------------------- ]
+
+" [ vim-agriculture ------------------------------------------------------------
+nmap <leader>/ <Plug>AgRawSearch
+vmap <leader>/ <Plug>AgRawVisualSelection
+nmap <leader>* <Plug>AgRawWordUnderCursor
 " ---------------------------------------------------------------------------- ]
 
 " [ tagbar ---------------------------------------------------------------------

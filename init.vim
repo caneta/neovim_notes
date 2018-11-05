@@ -4,3 +4,4 @@ source ~/.config/nvim/config/03-filetypes.vim
 source ~/.config/nvim/config/04-plugins.vim
 source ~/.config/nvim/config/05-plugins-settings.vim
 source ~/.config/nvim/config/06-appearance.vim
+source ~/.config/nvim/config/07-functions.vim

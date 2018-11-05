@@ -10,7 +10,6 @@ inoremap <leader>v <C-r><C-p>+|   " Insert mode: paste from the system clipboard
 map <leader>e :Explore<CR>|       " Open netrw Esplore window
 map <leader>w :wa<CR>|            " Save every buffer
 inoremap <leader>w <Esc>:wa<CR>i| " Save every buffer (insert mode)
-map <leader>q :wqa<CR>|           " Save every buffer and exit
 map <leader>n :enew<CR>|          " Open a new buffer in a new window
 map <leader>b :bd<CR>|            " Close the current buffer
 map <leader>o :on<CR>|            " Close every buffer, but the current one
@@ -25,3 +24,7 @@ inoremap ''E <C-k>E!| " uppercase grave accent (i.e.: 'cioè', 'è')
 inoremap ''i <C-k>i!
 inoremap ''o <C-k>o!
 inoremap ''u <C-k>u!
+
+" Switch between windows with Tab and Shift-Tab in Normal Mode
+nnoremap <Tab> <C-w>w
+nnoremap <S-Tab> <C-w>W
