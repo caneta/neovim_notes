@@ -88,10 +88,11 @@ let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_fixers['markdown'] = ['prettier']
 let g:ale_javascript_prettier_options = '--use-tabs'
 let g:ale_fix_on_save = 1
-nmap <silent> [W <Plug>(ale_first)
-nmap <silent> [w <Plug>(ale_previous)
-nmap <silent> ]w <Plug>(ale_next)
-nmap <silent> ]W <Plug>(ale_last)
+let g:ale_virtualtext_cursor = 1
+nmap <silent> [W <Plug>(ale_first)zz
+nmap <silent> [w <Plug>(ale_previous)zz
+nmap <silent> ]w <Plug>(ale_next)zz
+nmap <silent> ]W <Plug>(ale_last)zz
 " ---------------------------------------------------------------------------- ]
 
 " [ ncm2 -----------------------------------------------------------------------
