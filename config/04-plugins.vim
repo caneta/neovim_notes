@@ -31,7 +31,17 @@ Plug 'tpope/vim-characterize'    " Adds information to UTF characters metadata w
 Plug 'easymotion/vim-easymotion' " Better vim motions
 Plug 'google/vim-searchindex'    " When perform a search, it prints automatically 'At match #N out of M matches'
 Plug 'Valloric/ListToggle'       " Open location list and quickfix list with ease
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }} " Markdown preview
+
+function! BuildComposer(info)
+  if a:info.status != 'unchanged' || a:info.force
+    if has('nvim')
+      !cargo build --release
+    else
+      !cargo build --release --no-default-features --features json-rpc
+    endif
+  endif
+endfunction
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') } " Markdown composer
 
 " Source files navigation
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line Fuzzy Finder
