@@ -149,3 +149,8 @@ imap <C-L> <Plug>delimitMateS-Tab
 " [ vim-emoji ------------------------------------------------------------------
 set completefunc=emoji#complete
 " ---------------------------------------------------------------------------- ]
+
+" [ vim-markdown-composer ------------------------------------------------------
+let g:markdown_composer_open_browser=0
+let g:markdown_composer_autostart=0
+" ---------------------------------------------------------------------------- ]
