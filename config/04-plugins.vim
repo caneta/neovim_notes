@@ -7,6 +7,8 @@ call plug#begin('~/.config/nvim/plugins')
 " Look and feel
 Plug 'mhinz/vim-startify'       " [CONF] Fancy start screen
 Plug 'mhartington/oceanic-next' " Sublime Text inspired color scheme
+Plug 'sheerun/vim-polyglot'     " A collection of language packs
+Plug 'trevordmiller/nova-vim'   " Pastel color theme
 Plug 'ryanoasis/vim-devicons'   " [DEPS] File type icons to many plugins such as NERDTree, vim-airline, etc
 Plug 'vim-airline/vim-airline'  " [CONF] Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
