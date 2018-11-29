@@ -13,6 +13,7 @@ inoremap <leader>w <Esc>:wa<CR>i| " Save every buffer (insert mode)
 map <leader>n :enew<CR>|          " Open a new buffer in a new window
 map <leader>b :bd<CR>|            " Close the current buffer
 map <leader>o :on<CR>|            " Close every buffer, but the current one
+map <leader>x :xa<CR>|            " Save every modified buffer and quit Vim
 vnoremap <leader>s :sort<CR>|     " Visual mode: sort selection alphabetically
 nmap <leader>ff :echo @%<CR>|     " Print file name with relative path to curdir
 
