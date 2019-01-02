@@ -58,6 +58,7 @@ Plug 'autozimu/LanguageClient-neovim', {'branch':'next', 'do':'bash install.sh'}
 Plug 'ncm2/ncm2'                  " Autocompletion framework
 Plug 'roxma/nvim-yarp'            " Remote plugin framework, depency for ncm2
 Plug 'ncm2/ncm2-bufword'          " ncm2 autocompletion sources for current buffer
+Plug 'fgrsnau/ncm2-otherbuf'      " ncm2 autocompletion sources for other opened buffers
 Plug 'ncm2/ncm2-path'             " ncm2 autocompletion sources for file paths
 Plug 'ncm2/ncm2-ultisnips'        " ncm2 autocompletion sources for ultisnips
 Plug 'ncm2/ncm2-tagprefix'        " ncm2 autocompletion sources for tags prefix completion
