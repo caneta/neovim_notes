@@ -70,9 +70,9 @@ let g:vim_json_syntax_conceal=0 " Remove double quote hide
 " generate datebases in my cache directory, prevent gtags files polluting my project
 let g:gutentags_cache_dir = expand('~/.cache/tags')
 let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
-let g:gutentags_generate_on_missing = 1
-let g:gutentags_generate_on_new = 1
-let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_missing = 0
+let g:gutentags_generate_on_new = 0
+let g:gutentags_generate_on_write = 0
 let g:gutentags_ctags_exclude = [
     \ "*.min.js",
     \ "*.min.css",
