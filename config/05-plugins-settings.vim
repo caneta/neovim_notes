@@ -72,7 +72,7 @@ let g:gutentags_cache_dir = expand('~/.cache/tags')
 let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
 let g:gutentags_generate_on_missing = 0
 let g:gutentags_generate_on_new = 0
-let g:gutentags_generate_on_write = 0
+let g:gutentags_generate_on_write = 1
 let g:gutentags_ctags_exclude = [
     \ "*.min.js",
     \ "*.min.css",
@@ -96,7 +96,7 @@ let g:ale_fixers['javascript'] = ['eslint']
 let g:ale_fixers['css'] = ['stylelint']
 let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_fixers['markdown'] = ['prettier']
-let g:ale_javascript_prettier_options = '--use-tabs'
+" let g:ale_javascript_prettier_options = '--use-tabs'
 let g:ale_fix_on_save = 1
 " let g:ale_virtualtext_cursor = 1
 nmap <silent> [W <Plug>(ale_first)zz
