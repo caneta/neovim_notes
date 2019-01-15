@@ -8,3 +8,9 @@ set cursorcolumn                        " Highlight current column
 set showmatch                           " blink on matching brackets
 let &colorcolumn=join(range(82,82),",") " set different color for column 81
 set showbreak=↪                         " show symbol on wrapped lines
+
+" Highlight the terminal cursor
+if has('nvim')
+  highlight! link TermCursor Cursor
+  highlight! TermCursorNC guibg=red guifg=white ctermbg=Red ctermfg=White
+endif

@@ -29,3 +29,9 @@ inoremap ''u <C-k>u!
 " Switch between windows with Tab and Shift-Tab in Normal Mode
 nnoremap <Tab> <C-w>w
 nnoremap <S-Tab> <C-w>W
+
+" Set <Esc> to exit terminal mode
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+endif
