@@ -30,8 +30,8 @@ inoremap ''u <C-k>u!
 nnoremap <Tab> <C-w>w
 nnoremap <S-Tab> <C-w>W
 
-" Set <Esc> to exit terminal mode
-if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <C-v><Esc> <Esc>
-endif
+" Set <Esc> to exit terminal mode (problems with FZF)
+" if has('nvim')
+"   tnoremap <Esc> <C-\><C-n>
+"   tnoremap <C-v><Esc> <Esc>
+" endif
