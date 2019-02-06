@@ -113,7 +113,7 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 
 " show information about identifier in autocompletion popup menu
-set completeopt+=preview
+" set completeopt+=preview
 
 " Close the preview window automatically when the popup menu closes
 autocmd CompleteDone * silent! pclose!
@@ -132,6 +132,10 @@ let g:LanguageClient_serverCommands = {
   \ 'html': ['html-languageserver', '--stdio'],
   \ 'java': ['/usr/local/bin/jdtls']
   \ }
+
+" Disable virtual text
+let g:LanguageClient_useVirtualText = 0
+
 " ---------------------------------------------------------------------------- ]
 
 " [ MatchTagAlways -------------------------------------------------------------

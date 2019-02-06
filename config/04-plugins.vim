@@ -14,10 +14,9 @@ Plug 'vim-airline/vim-airline'  " [CONF] Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
 Plug 'ap/vim-css-color'         " Color the background of a CSS colorname (Hex, RGBA, etc)
 Plug 'wellle/targets.vim'       " Additional text objects
-Plug 'blueyed/vim-diminactive'  " Dim inactive windows
+Plug 'TaDaa/vimade'             " Fades your inactive buffers
 Plug 'matze/vim-move'           " Move lines avoiding cut and paste
 Plug 'Valloric/MatchTagAlways'  " Highlight tag in which I'm in
-" Plug 'mhinz/vim-signify'        " Show git diff in the gutter
 Plug 'junegunn/vim-emoji'       " Write emoji in vim, like :blu and pressing <C-x><C-u>
 Plug 'markonm/traces.vim'       " Range, pattern and substitute preview
 
@@ -66,7 +65,7 @@ Plug 'ncm2/ncm2-html-subscope'    " Detect javascript/css subscope from html cod
 Plug 'yuki-ycino/ncm2-dictionary' " ncm2 autocompletion sources for dictionary
 
 Plug 'SirVer/ultisnips'     " Autocompletion with snippets
-Plug 'honza/vim-snippets'    " List of a lot of snippets
+Plug 'honza/vim-snippets'   " List of a lot of snippets
 Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typing
 Plug 'mattn/emmet-vim'      " Expand abbreviations for Web Development with emmet syntax
 
