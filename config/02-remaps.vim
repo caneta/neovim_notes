@@ -1,6 +1,8 @@
 " Remaps (pipe is needed to make comments not part of mappings)
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>| " Set ctr-l to clean up last search match highlight
 nnoremap K i<CR><Esc>|                             " The opposite of J: split single line in two at cursor position
+nmap n nzz| " When moving to the next search match, put cursor in the middle of window
+nmap N Nzz| " When moving to the previous search match, put cursor in the middle of window
 
 " Mapping using key leader (default is '\')
 vnoremap <leader>c "+yh|          " Visual mode: copy in the system clipboard the selected characters with \c
