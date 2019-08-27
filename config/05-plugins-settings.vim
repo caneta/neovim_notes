@@ -90,19 +90,22 @@ let g:gutentags_ctags_exclude = [
 let g:gutentags_plus_nomap = 1
 " ---------------------------------------------------------------------------- ]
 
-" [ Ale ------------------------------------------------------------------------
-let g:ale_fixers = {}
-let g:ale_fixers['javascript'] = ['eslint']
-let g:ale_fixers['css'] = ['stylelint']
-let g:ale_fixers['scss'] = ['stylelint']
-let g:ale_fixers['markdown'] = ['prettier']
-" let g:ale_javascript_prettier_options = '--use-tabs'
-let g:ale_fix_on_save = 1
-" let g:ale_virtualtext_cursor = 1
-nmap <silent> [W <Plug>(ale_first)zz
-nmap <silent> [w <Plug>(ale_previous)zz
-nmap <silent> ]w <Plug>(ale_next)zz
-nmap <silent> ]W <Plug>(ale_last)zz
+" [ LanguageClient-neovim ------------------------------------------------------
+let g:LanguageClient_serverCommands = {
+  \ 'css': ['css-languageserver', '--stdio'],
+  \ 'scss': ['css-languageserver', '--stdio'],
+  \ 'javascript': ['javascript-typescript-stdio'],
+  \ 'javascript.jsx': ['javascript-typescript-stdio'],
+  \ 'html': ['html-languageserver', '--stdio'],
+  \ 'java': ['/usr/local/bin/jdtls']
+  \ }
+
+" Enable debug
+" let g:LanguageClient_loggingFile = '/tmp/lc.log'
+" let g:LanguageClient_loggingLevel = 'DEBUG'
+
+" Disable virtual text
+" let g:LanguageClient_useVirtualText = 0
 " ---------------------------------------------------------------------------- ]
 
 " [ ncm2 -----------------------------------------------------------------------
@@ -116,26 +119,27 @@ set completeopt=noinsert,menuone,noselect
 " set completeopt+=preview
 
 " Close the preview window automatically when the popup menu closes
-autocmd CompleteDone * silent! pclose!
+" autocmd CompleteDone * silent! pclose!
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " ---------------------------------------------------------------------------- ]
 
-" [ LanguageClient-neovim ------------------------------------------------------
-let g:LanguageClient_serverCommands = {
-  \ 'css': ['css-languageserver', '--stdio'],
-  \ 'scss': ['css-languageserver', '--stdio'],
-  \ 'javascript': ['javascript-typescript-stdio'],
-  \ 'javascript.jsx': ['javascript-typescript-stdio'],
-  \ 'html': ['html-languageserver', '--stdio'],
-  \ 'java': ['/usr/local/bin/jdtls']
-  \ }
-
-" Disable virtual text
-let g:LanguageClient_useVirtualText = 0
-
+" [ Ale ------------------------------------------------------------------------
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['eslint']
+let g:ale_fixers['css'] = ['stylelint']
+let g:ale_fixers['scss'] = ['stylelint']
+let g:ale_fixers['markdown'] = ['prettier']
+" let g:ale_javascript_prettier_options = '--use-tabs'
+let g:ale_fix_on_save = 1
+" let g:ale_virtualtext_cursor = 1
+" let g:ale_completion_enabled = 1
+nmap <silent> [W <Plug>(ale_first)zz
+nmap <silent> [w <Plug>(ale_previous)zz
+nmap <silent> ]w <Plug>(ale_next)zz
+nmap <silent> ]W <Plug>(ale_last)zz
 " ---------------------------------------------------------------------------- ]
 
 " [ MatchTagAlways -------------------------------------------------------------
@@ -171,4 +175,8 @@ set completefunc=emoji#complete
 " [ vim-markdown-composer ------------------------------------------------------
 let g:markdown_composer_open_browser=0
 let g:markdown_composer_autostart=0
+" ---------------------------------------------------------------------------- ]
+
+" [ vim-polyglot ---------------------------------------------------------------
+let g:polyglot_disabled = ['csv']
 " ---------------------------------------------------------------------------- ]

@@ -1,4 +1,4 @@
-" So" General
+" General
 set number                 " Set line numbers
 set title                  " Set title in terminal window
 set clipboard+=unnamedplus " to put yanked lines into clipboard
@@ -25,11 +25,11 @@ set foldcolumn=2      " show columns of folding representation at a side of wind
 set foldlevel=1       " folds with a higher level will be closed
 set foldnestmax=2     " deepest fold nesting
 
+" Sessions
+set sessionoptions+=localoptions
+
 " Autocompletion
 set omnifunc=syntaxcomplete#Complete " Omnifunc autocompletion
 
 " Netrw file browser (Vim included plugin enabled by default)
 let g:netrw_fastbrowse = 0
-" let g:netrw_banner = 0
-" let g:netrw_winsize = 20 " Open netrw in a 20% width split
-" let g:netrw_browse_split = 4
