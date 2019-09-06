@@ -9,6 +9,7 @@ Plug 'mhinz/vim-startify'       " [CONF] Fancy start screen
 Plug 'sheerun/vim-polyglot'     " A collection of language packs
 Plug 'mhartington/oceanic-next' " Sublime Text inspired color scheme (used by  vim-airline)
 Plug 'trevordmiller/nova-vim'   " Pastel color theme
+Plug 'arcticicestudio/nord-vim' " Nordic color theme
 Plug 'ryanoasis/vim-devicons'   " [DEPS] File type icons to many plugins such as NERDTree, vim-airline, etc
 Plug 'vim-airline/vim-airline'  " [CONF] Light status bar and tabline
 Plug 'Yggdroot/indentLine'      " Display indentation levels with vertical lines
@@ -71,7 +72,7 @@ Plug 'ncm2/ncm2-html-subscope'    " Detect javascript/css subscope from html cod
 Plug 'yuki-ycino/ncm2-dictionary' " ncm2 autocompletion sources for dictionary
 
 " Linting
-Plug 'w0rp/ale' " Asynchronous linter for a lot of languages
+Plug 'dense-analysis/ale' " Asynchronous linter for a lot of languages
 
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based

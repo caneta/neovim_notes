@@ -21,7 +21,7 @@ let g:startify_bookmarks = [
 " ---------------------------------------------------------------------------- ]
 
 " [ vim-airline ----------------------------------------------------------------
-let g:airline_theme='nova'
+let g:airline_theme='nord'
 let g:airline_powerline_fonts=1 " Use powerline fonts, installed with nerd fonts
 let g:airline#extensions#tabline#enabled=1 " Set enhanced tabline
 let g:airline#extensions#tabline#fnamemod=':t' " Filename format: tail of the filename
