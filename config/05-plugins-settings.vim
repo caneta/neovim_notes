@@ -25,7 +25,7 @@ let g:airline_theme='nord'
 let g:airline_powerline_fonts=1 " Use powerline fonts, installed with nerd fonts
 let g:airline#extensions#tabline#enabled=1 " Set enhanced tabline
 let g:airline#extensions#tabline#fnamemod=':t' " Filename format: tail of the filename
-let g:airline#extensions#tabline#buffer_idx_mode = 1 " Show tab numbers
+let g:airline#extensions#tabline#buffer_nr_show = 1 " Show buffer numbers
 let g:airline_theme='oceanicnext'
 " ---------------------------------------------------------------------------- ]
 
