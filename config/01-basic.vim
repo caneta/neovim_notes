@@ -8,6 +8,7 @@ set iskeyword+=\-          " Makes dashed variables like $my-variable, available
 set updatetime=100         " If nothing happens on screen, after how many ms the swap file is written to disk (default is 4000)
 filetype plugin indent on  " Detect file types, load its plugin and apply its indentation
 syntax enable              " Switch on syntax highlighting
+set shortmess-=S           " Set search matches count
 
 " Indentation
 set smartindent   " Do smart autoindenting when starting a new line
@@ -19,11 +20,16 @@ set shiftwidth=2  " How many spaces with autoindent
 set tabstop=2     " Number of spaces used to visually represent a <Tab>
 
 " Folding
-set foldmethod=indent " fold based on indent
+set foldmethod=indent " Lines with equal indent form a fold
+" set foldmethod=manual " Folds are created manually
+" set foldmethod=expr   " 'foldexpr' gives the fold level of a line
+" set foldmethod=marker " Markers are used to specify folds
+" set foldmethod=syntax " Syntax highlighting items specify folds
+" set foldmethod=diff   " Fold text that is not changed
 set nofoldenable      " no fold by default
 set foldcolumn=2      " show columns of folding representation at a side of window
 set foldlevel=1       " folds with a higher level will be closed
-set foldnestmax=2     " deepest fold nesting
+set foldnestmax=10    " deepest fold nesting
 
 " Sessions
 set sessionoptions+=localoptions

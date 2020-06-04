@@ -110,10 +110,10 @@ let g:LanguageClient_serverCommands = {
 
 " [ ncm2 -----------------------------------------------------------------------
 " enable ncm2 for all buffers
-autocmd BufEnter * call ncm2#enable_for_buffer()
+" autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
-set completeopt=noinsert,menuone,noselect
+" set completeopt=noinsert,menuone,noselect
 
 " show information about identifier in autocompletion popup menu
 " set completeopt+=preview
@@ -122,8 +122,19 @@ set completeopt=noinsert,menuone,noselect
 " autocmd CompleteDone * silent! pclose!
 
 " Use <TAB> to select the popup menu:
+" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" ---------------------------------------------------------------------------- ]
+
+" [ coc.nvim -------------------------------------------------------------------
+" Proxy settings to install Coc plugins
+let $NO_PROXY = '*'
+" Use <Tab> and <S-Tab> to navigate the completion list
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Use <cr> to confirm completion
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " ---------------------------------------------------------------------------- ]
 
 " [ Ale ------------------------------------------------------------------------
