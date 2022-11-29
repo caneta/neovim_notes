@@ -21,11 +21,6 @@ set tabstop=2     " Number of spaces used to visually represent a <Tab>
 
 " Folding
 set foldmethod=manual " folds must be defined by entering commands (such as zf)
-" set foldmethod=indent " groups of lines with the same indent form a fold
-" set foldmethod=syntax " folds are defined by syntax highlighting
-" set foldmethod=expr   " folds are defined by a user-defined expression
-" set foldmethod=marker " special characters can be manually or automatically added to your text to flag the start and end of folds
-" set foldmethod=diff   " used to fold unchanged text when viewing differences (automatically set in diff mode)
 
 set nofoldenable      " no fold by default
 set foldcolumn=2      " show columns of folding representation at a side of window

@@ -19,7 +19,6 @@ Plug 'matze/vim-move'           " Move lines avoiding cut and paste
 Plug 'Valloric/MatchTagAlways'  " Highlight tag in which I'm in
 Plug 'junegunn/vim-emoji'       " Write emoji in vim, like :blu and pressing <C-x><C-u>
 Plug 'markonm/traces.vim'       " Range, pattern and substitute preview
-" Plug 'TaDaa/vimade'             " Fades your inactive buffers
 
 " Utilities
 Plug 'tpope/vim-commentary'         " Comment/uncomment code easily
@@ -38,9 +37,6 @@ Plug 'amadeus/vim-convert-color-to' " Convert CSS colors between different forma
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Command line Fuzzy Finder
 Plug 'junegunn/fzf.vim'             " FZF Neovim Wrapper
 Plug 'jesseleite/vim-agriculture'   " Make possible to use silver searcher (Ag) with fzf like in the command line
-Plug 'ludovicchabant/vim-gutentags' " [DEPS] (Re)Generate tag files while you are working
-Plug 'skywind3000/gutentags_plus'   " Keeps gutentags on separate databases
-Plug 'majutsushi/tagbar'            " [DEPS] Class outline viewer: ctags dependency needed
 
 " Autocompletion
 Plug 'SirVer/ultisnips'     " Autocompletion with snippets
@@ -49,22 +45,9 @@ Plug 'Raimondi/delimitMate' " Auto complete quotes and brackets while you're typ
 Plug 'mattn/emmet-vim'      " Expand abbreviations for Web Development with emmet syntax
 
 Plug 'autozimu/LanguageClient-neovim', {'branch':'next', 'do':'bash install.sh'} " Language Server Protocol
-" Plug 'ncm2/ncm2'                  " Autocompletion framework
-" Plug 'roxma/nvim-yarp'            " Remote plugin framework, depency for ncm2
-" Plug 'ncm2/ncm2-bufword'          " ncm2 autocompletion sources for current buffer
-" Plug 'fgrsnau/ncm2-otherbuf'      " ncm2 autocompletion sources for other opened buffers
-" Plug 'ncm2/ncm2-path'             " ncm2 autocompletion sources for file paths
-" Plug 'ncm2/ncm2-ultisnips'        " ncm2 autocompletion sources for ultisnips
-" Plug 'ncm2/ncm2-tagprefix'        " ncm2 autocompletion sources for tags prefix completion
-" Plug 'ncm2/ncm2-html-subscope'    " Detect javascript/css subscope from html code
-" Plug 'yuki-ycino/ncm2-dictionary' " ncm2 autocompletion sources for dictionary
-
 
 " Conquer Of Completion framework
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" Linting
-Plug 'dense-analysis/ale' " Asynchronous linter for a lot of languages
 
 " Syntax 
 Plug 'andreshazard/vim-freemarker' " Apache templating language, java based

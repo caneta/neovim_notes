@@ -41,18 +41,12 @@ nmap <leader>F :Files <CR>|  " Search files in the current dir
 nmap <leader>g :Ag <CR>|     " Search strings ag
 nmap <leader>B :Buffers<CR>| " Search in open buffers
 nmap <leader>h :History<CR>| " Search in buffer history
-nmap <leader>t :BTags<CR>|   " Search for tags in the current buffer, no tags file needed
-nmap <leader>T :Tags<CR>|    " Search for tags in a project (vim-gutentags needed)
 " ---------------------------------------------------------------------------- ]
 
 " [ vim-agriculture ------------------------------------------------------------
 nmap <leader>/ <Plug>AgRawSearch
 vmap <leader>/ <Plug>AgRawVisualSelection
 nmap <leader>* <Plug>AgRawWordUnderCursor
-" ---------------------------------------------------------------------------- ]
-
-" [ tagbar ---------------------------------------------------------------------
-nmap <F8> :TagbarToggle<CR>
 " ---------------------------------------------------------------------------- ]
 
 " [ indentLine -----------------------------------------------------------------
@@ -64,30 +58,6 @@ autocmd FileType markdown let g:indentLine_enabled=0
 
 " [ vim-json -------------------------------------------------------------------
 let g:vim_json_syntax_conceal=0 " Remove double quote hide
-" ---------------------------------------------------------------------------- ]
-
-" [ vim-gutentags --------------------------------------------------------------
-" generate datebases in my cache directory, prevent gtags files polluting my project
-let g:gutentags_cache_dir = expand('~/.cache/tags')
-let g:gutentags_project_info = [{'type':'javascript'}, {'type':'scss'}]
-let g:gutentags_generate_on_missing = 0
-let g:gutentags_generate_on_new = 0
-let g:gutentags_generate_on_write = 1
-let g:gutentags_ctags_exclude = [
-    \ "*.min.js",
-    \ "*.min.css",
-    \ "*.properties",
-    \ "build",
-    \ "vendor",
-    \ "dist",
-    \ ".git",
-    \ "node_modules"
-    \ ]
-" ---------------------------------------------------------------------------- ]
-
-" [ vim-gutentags_plus --------------------------------------------------------
-" Disable gutentags_plus default remaps
-let g:gutentags_plus_nomap = 1
 " ---------------------------------------------------------------------------- ]
 
 " [ LanguageClient-neovim ------------------------------------------------------
@@ -108,24 +78,6 @@ let g:LanguageClient_serverCommands = {
 " let g:LanguageClient_useVirtualText = 0
 " ---------------------------------------------------------------------------- ]
 
-" [ ncm2 -----------------------------------------------------------------------
-" enable ncm2 for all buffers
-" autocmd BufEnter * call ncm2#enable_for_buffer()
-
-" IMPORTANT: :help Ncm2PopupOpen for more information
-" set completeopt=noinsert,menuone,noselect
-
-" show information about identifier in autocompletion popup menu
-" set completeopt+=preview
-
-" Close the preview window automatically when the popup menu closes
-" autocmd CompleteDone * silent! pclose!
-
-" Use <TAB> to select the popup menu:
-" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" ---------------------------------------------------------------------------- ]
-
 " [ coc.nvim -------------------------------------------------------------------
 let g:coc_node_path = trim(system('which node'))
 " Proxy settings to install Coc plugins
@@ -136,22 +88,6 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Use <cr> to confirm completion
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" ---------------------------------------------------------------------------- ]
-
-" [ Ale ------------------------------------------------------------------------
-" let g:ale_fixers = {}
-" let g:ale_fixers['javascript'] = ['eslint']
-" let g:ale_fixers['css'] = ['stylelint']
-" let g:ale_fixers['scss'] = ['stylelint']
-" let g:ale_fixers['markdown'] = ['prettier']
-" let g:ale_javascript_prettier_options = '--use-tabs'
-" let g:ale_fix_on_save = 1
-" let g:ale_virtualtext_cursor = 1
-" let g:ale_completion_enabled = 1
-" nmap <silent> [W <Plug>(ale_first)zz
-" nmap <silent> [w <Plug>(ale_previous)zz
-" nmap <silent> ]w <Plug>(ale_next)zz
-" nmap <silent> ]W <Plug>(ale_last)zz
 " ---------------------------------------------------------------------------- ]
 
 " [ MatchTagAlways -------------------------------------------------------------
