@@ -20,12 +20,13 @@ set shiftwidth=2  " How many spaces with autoindent
 set tabstop=2     " Number of spaces used to visually represent a <Tab>
 
 " Folding
-set foldmethod=indent " Lines with equal indent form a fold
-" set foldmethod=manual " Folds are created manually
-" set foldmethod=expr   " 'foldexpr' gives the fold level of a line
-" set foldmethod=marker " Markers are used to specify folds
-" set foldmethod=syntax " Syntax highlighting items specify folds
-" set foldmethod=diff   " Fold text that is not changed
+set foldmethod=manual " folds must be defined by entering commands (such as zf)
+" set foldmethod=indent " groups of lines with the same indent form a fold
+" set foldmethod=syntax " folds are defined by syntax highlighting
+" set foldmethod=expr   " folds are defined by a user-defined expression
+" set foldmethod=marker " special characters can be manually or automatically added to your text to flag the start and end of folds
+" set foldmethod=diff   " used to fold unchanged text when viewing differences (automatically set in diff mode)
+
 set nofoldenable      " no fold by default
 set foldcolumn=2      " show columns of folding representation at a side of window
 set foldlevel=1       " folds with a higher level will be closed

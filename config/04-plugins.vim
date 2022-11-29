@@ -19,7 +19,7 @@ Plug 'matze/vim-move'           " Move lines avoiding cut and paste
 Plug 'Valloric/MatchTagAlways'  " Highlight tag in which I'm in
 Plug 'junegunn/vim-emoji'       " Write emoji in vim, like :blu and pressing <C-x><C-u>
 Plug 'markonm/traces.vim'       " Range, pattern and substitute preview
-Plug 'TaDaa/vimade'             " Fades your inactive buffers
+" Plug 'TaDaa/vimade'             " Fades your inactive buffers
 
 " Utilities
 Plug 'tpope/vim-commentary'         " Comment/uncomment code easily

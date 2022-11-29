@@ -127,6 +127,7 @@ let g:LanguageClient_serverCommands = {
 " ---------------------------------------------------------------------------- ]
 
 " [ coc.nvim -------------------------------------------------------------------
+let g:coc_node_path = trim(system('which node'))
 " Proxy settings to install Coc plugins
 let $NO_PROXY = '*'
 " Use <Tab> and <S-Tab> to navigate the completion list
@@ -138,19 +139,19 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " ---------------------------------------------------------------------------- ]
 
 " [ Ale ------------------------------------------------------------------------
-let g:ale_fixers = {}
-let g:ale_fixers['javascript'] = ['eslint']
-let g:ale_fixers['css'] = ['stylelint']
-let g:ale_fixers['scss'] = ['stylelint']
-let g:ale_fixers['markdown'] = ['prettier']
+" let g:ale_fixers = {}
+" let g:ale_fixers['javascript'] = ['eslint']
+" let g:ale_fixers['css'] = ['stylelint']
+" let g:ale_fixers['scss'] = ['stylelint']
+" let g:ale_fixers['markdown'] = ['prettier']
 " let g:ale_javascript_prettier_options = '--use-tabs'
-let g:ale_fix_on_save = 1
+" let g:ale_fix_on_save = 1
 " let g:ale_virtualtext_cursor = 1
 " let g:ale_completion_enabled = 1
-nmap <silent> [W <Plug>(ale_first)zz
-nmap <silent> [w <Plug>(ale_previous)zz
-nmap <silent> ]w <Plug>(ale_next)zz
-nmap <silent> ]W <Plug>(ale_last)zz
+" nmap <silent> [W <Plug>(ale_first)zz
+" nmap <silent> [w <Plug>(ale_previous)zz
+" nmap <silent> ]w <Plug>(ale_next)zz
+" nmap <silent> ]W <Plug>(ale_last)zz
 " ---------------------------------------------------------------------------- ]
 
 " [ MatchTagAlways -------------------------------------------------------------
@@ -189,5 +190,5 @@ let g:markdown_composer_autostart=0
 " ---------------------------------------------------------------------------- ]
 
 " [ vim-polyglot ---------------------------------------------------------------
-let g:polyglot_disabled = ['csv']
+"let g:polyglot_disabled = ['csv']
 " ---------------------------------------------------------------------------- ]
