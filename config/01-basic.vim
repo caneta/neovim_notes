@@ -35,3 +35,9 @@ set omnifunc=syntaxcomplete#Complete " Omnifunc autocompletion
 
 " Netrw file browser (Vim included plugin enabled by default)
 let g:netrw_fastbrowse = 0
+
+" set the route of the python3 executable
+let g:python3_host_prog = '/usr/bin/python'
+
+" Explicitly tells to neovim use python3 when evaluate python code
+set pyxversion=3
