@@ -31,3 +31,5 @@ inoremap ''u <C-k>u!
 " Switch between windows with Tab and Shift-Tab in Normal Mode
 nnoremap <Tab> <C-w>w
 nnoremap <S-Tab> <C-w>W
+
+nnoremap <C-v> <C-q> " Remap visual block selection because <C-v> means paste!
