@@ -6,4 +6,4 @@
 --   command = "tabdo wincmd =",
 -- })
 --
-vim.wo.relativenumber = true
+-- vim.wo.relativenumber = true
